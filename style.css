@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +24,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 1% 1% 1% 1.5%;
   user-select: none;
-
+  font-family: Merriweather, Serif;
 }
 .Aperture {
   background-color: #27a7d890;
@@ -34,6 +35,6 @@ a {
   background-color: #ff9a0090;
 }
 a img {
-  width: 5%;
-  filter:grayscale(100%) brightness(1000%);
+  width: 7%;
+  filter: grayscale(100%) brightness(1000%);
 }
