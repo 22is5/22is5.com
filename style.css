@@ -1,5 +1,39 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  background-color: #dedede00;
+  width: 70%;
+  padding: 1%;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  font-size: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  user-select: none;
+
+}
+.Aperture {
+  background-color: #27a7d890;
+}
+.BlackMesa {
+  background-color: #ff9a0090;
+}
+a img {
+  width: 5%;
+  filter:grayscale(100%) brightness(1000%);
 }
