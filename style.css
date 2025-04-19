@@ -37,10 +37,6 @@ p a {
 .links a {
   transition: 0.3s;
 }
-.links a:nth-child(even) {
-}
-.links a:nth-child(odd) {
-}
 .whoooleThing {
   height: 100vh;
   padding: 0% 2.6%;
