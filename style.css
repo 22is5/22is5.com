@@ -1,40 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-.parent {
+body {
+  background-color: #000;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.bg {
+  background-color: #502424;
   width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+p {
+  font-family: Merriweather, serif;
+  font-size: 2vw;
+  font-style: normal;
+}
+p a {
+  font-family: Merriweather, serif;
+  font-size: 2vw;
+  color: #bef7ff;
+  width: fit-content;
+  font-style: italic;
+}
+.links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.links a {
+  transition: 0.3s;
+}
+.links a:nth-child(even) {
+}
+.links a:nth-child(odd) {
+}
+.whoooleThing {
+  height: 100vh;
+  padding: 0% 2.6%;
+}
+.gradient {
+  background: linear-gradient(#00000000, #000000ee);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.segment {
+  background-color: #000;
+  width: 100%;
   height: 100vh;
 }
-.main {
-  background-color: #dedede00;
-  width: 70%;
-  padding: 1%;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-  width: 100%;
-  font-size: 3vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1% 1% 1% 1.5%;
+.guy {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 22%;
+  filter: drop-shadow(0 0 0.02vw #fff);
+  pointer-events: none;
   user-select: none;
-  font-family: Merriweather, Serif;
 }
-.Aperture {
-  background-color: #27a7d890;
+.segment p {
+  font-size: 2vw;
+  bottom: 0;
 }
-.BlackMesa {
-  background-color: #ff9a0090;
+.midText {
+  opacity: 0.05;
+  filter: drop-shadow(0 0 0.1vw #fff);
+  user-select: none;
 }
-a img {
-  width: 7%;
-  filter: grayscale(100%) brightness(1000%);
+.header {
+  font-size: 3vw;
+  padding: 2% 0 0 0;
 }
