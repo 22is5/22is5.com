@@ -29,7 +29,7 @@ body {
   font-family: Cinzel;
   font-size: 3.35vw;
   text-transform: uppercase;
-  color: #971d1d;
+  color: #9e2b2b;
   font-weight: 500;
   text-align: center;
   padding: 0.5% 1%;
@@ -46,10 +46,29 @@ body {
   text-align: left;
   text-shadow: 0 0 2vw #000, 0 0 1vw #000, 0 0 0.5vw #000, 0 0 0.5vw #000,
     0 0 0.5vw #000, 0 0 0.5vw #000, 0 0 0.5vw #000;
-  width: 61.5%;
+  width: 38.4%;
   text-decoration: none;
 }
 a {
   color: #cacaca;
   text-decoration: none;
+}
+.links {
+  width: 38.4%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.links p:nth-child(even) {
+  justify-content: right;
+  width:50%;
+}
+.links p {
+  display: flex;
+  justify-content: left;
+  width:50%;
+}
+.links p a {
+  text-align: center;
 }
