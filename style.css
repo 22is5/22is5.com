@@ -27,7 +27,7 @@ body {
 }
 .main {
   background-color: #00000050;
-  width: 40%;
+  width: 60%;
 }
 .title {
   font-family: Cinzel;
@@ -40,6 +40,11 @@ body {
   padding-bottom: 0;
   text-shadow: 0 0 2vw #000, 0 0 1vw #000, 0 0 0.5vw #000, 0 0 0.5vw #000,
     0 0 0.5vw #000, 0 0 0.5vw #000, 0 0 0.5vw #000;
+}
+.subtext {
+  color:#cacaca;
+  opacity: 0.5;
+  font-size:2vw;
 }
 .tracklist {
   font-family: Cinzel;
@@ -64,10 +69,6 @@ a {
   justify-content: space-between;
   text-align: center;
 }
-.links p:nth-child(even) {
-  justify-content: right;
-  width: 50%;
-}
 .links p {
   display: flex;
   justify-content: left;
@@ -78,5 +79,5 @@ a {
 }
 iframe {
   width: 100%;
-  aspect-ratio: 5/2;
+  aspect-ratio: 5/1.99;
 }
