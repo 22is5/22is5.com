@@ -25,6 +25,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.main {
+  background-color: #00000050;
+  width: 40%;
+}
 .title {
   font-family: Cinzel;
   font-size: 3.35vw;
@@ -55,20 +59,24 @@ a {
 }
 .links {
   width: 38.4%;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
 }
 .links p:nth-child(even) {
   justify-content: right;
-  width:50%;
+  width: 50%;
 }
 .links p {
   display: flex;
   justify-content: left;
-  width:50%;
+  width: 50%;
 }
 .links p a {
   text-align: center;
+}
+iframe {
+  width: 100%;
+  aspect-ratio: 5/2;
 }
