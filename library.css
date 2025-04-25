@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  color:#dedede;
+  background-color: #000;
+}
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container {
+  background-color: #151515;
+  height: 32px;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 98%;
+  padding: 8px;
+  scrollbar-width: none;
+  margin-left:1%;
+}
+.container :nth-child(odd) {
+    background-color: #191919;
+}
+.container :nth-child(1) {
+    background-color: #252525;
+}
+.container:hover {
+  height: fit-content;
+}
+p {
+    padding-left:10px;
+}
