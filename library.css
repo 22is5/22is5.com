@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #dedede;
-  background-color: #000;
+  background-color: #00000000;
 }
 .title {
   font-weight: bold;
@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 .container {
-  background-color: #151515;
+  background-color: #00000000;
   height: 48px;
   overflow: hidden;
   transition: 0.3s;
@@ -32,10 +32,10 @@ body {
   scrollbar-width: none;
 }
 .container :nth-child(odd) {
-  background-color: #191919;
+  background-color: #ffffff10;
 }
 .container :nth-child(1) {
-  background-color: #252525;
+  background-color: #ffffff20;
 }
 .container:hover {
   height: fit-content;
@@ -49,9 +49,4 @@ p {
 }
 p img {
   width: 32px;
-}
-.star {
-  color: rgb(239, 190, 56);
-  font-weight: 800;
-  font-size:20px;
 }
