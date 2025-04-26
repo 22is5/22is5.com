@@ -27,20 +27,21 @@ body {
 }
 .main {
   background-color: #00000050;
-  width: 60%;
+  width: 800px;
+  max-width: 100%;
+  backdrop-filter: blur(2px);
 }
 .title {
   font-family: Cinzel;
-  font-size: 3.35vw;
+  font-size: 56px;
   text-transform: uppercase;
   color: #9e2b2b;
   font-weight: 500;
-  text-align: center;
-  padding: 0.5% 1%;
-  padding-bottom: 0;
+  text-align: left;
+  padding: 1% 0 0 1%;
   text-shadow: 0 0 2vw #000, 0 0 1vw #000, 0 0 0.5vw #000, 0 0 0.5vw #000,
     0 0 0.5vw #000, 0 0 0.5vw #000, 0 0 0.5vw #000;
-  cursor: pointer;
+  cursor: default;
 }
 .subtext {
   color: #cacaca;
@@ -80,5 +81,5 @@ a {
 }
 iframe {
   width: 100%;
-  aspect-ratio: 5/1.99;
+  aspect-ratio: 5/3;
 }

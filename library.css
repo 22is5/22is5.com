@@ -32,10 +32,10 @@ body {
   scrollbar-width: none;
 }
 .container :nth-child(odd) {
-  background-color: #ffffff10;
+  background-color: #ffffff05;
 }
 .container :nth-child(1) {
-  background-color: #ffffff20;
+  background-color: #ffffff10;
 }
 .container:hover {
   height: fit-content;
