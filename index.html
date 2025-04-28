@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/guy.webp" type="image/x-icon" />
     <title>2plus2isfive</title>
   </head>
   <body>
@@ -51,10 +52,6 @@
             transform: scale(1.1);
             filter: drop-shadow(0 0 10px #000);
           }
-          .border img:hover {
-            transform: scale(1);
-            filter: drop-shadow(0 0 0px #000);
-          }
           .albuminfo {
             width: 100%;
             display: flex;
@@ -68,12 +65,16 @@
             line-height: 0.8;
             text-decoration: none;
             color: #dedede;
+            transition: 0.1s;
+          }
+          .albuminfo .title:hover {
+            color: #dededede;
           }
           .albuminfo .subtitle {
             font-size: 20px;
             line-height: 0.8;
-            letter-spacing: 2.3px;
-            opacity: 0.8;
+            letter-spacing: 1.5px;
+            opacity: 0.65;
             padding: 0 0 0 2px;
           }
           .alternate {
@@ -81,7 +82,7 @@
             flex-direction: column;
             justify-content: left;
             overflow-y: scroll;
-            height: 150px;
+            height: 256px;
             scrollbar-width: thin;
             scrollbar-color: #ffffff10 #00000000;
           }
@@ -102,6 +103,12 @@
           .no {
             color: #ffffff50;
           }
+          .track {
+            color: #ffffff90;
+            font-size: 18px;
+            font-style: italic;
+            margin: 5px 0 0 0;
+          }
         </style>
         <div class="main">
           <p class="header">Favorite Albums</p>
@@ -117,6 +124,7 @@
                   <p class="rating">
                     <span class="yes">&star;&star;&star;&star;&star;</span>
                   </p>
+                  <p class="track">"Our Last Shot"</p>
                 </div>
               </div>
             </div>
@@ -130,6 +138,59 @@
                   <p class="rating">
                     <span class="yes">&star;&star;&star;&star;&star;</span>
                   </p>
+                  <p class="track">"Bird Sounds"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/bullets.jpg" alt="" />
+                <div class="albuminfo">
+                  <a
+                    href=""
+                    class="title"
+                    title="I Brought You My Bullets, You Brought Me Your Love"
+                    >I Brought You My Bullets...</a
+                  >
+                  <p class="subtitle">My Chemical Romance &bull; 2002</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"This is the Best Day Ever"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/dangerdays.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title" title="Danger Days">Danger Days...</a>
+                  <p class="subtitle">My Chemical Romance &bull; 2010</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"Planetary (GO!)"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/threecheersdeluxe.jpg" alt="" />
+                <div class="albuminfo">
+                  <a
+                    href=""
+                    class="title"
+                    title="Three Cheers for Sweet Revenge"
+                    >Three Cheers...</a
+                  >
+                  <p class="subtitle">My Chemical Romance &bull; 2025</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"Thank You for the Venom"</p>
                 </div>
               </div>
             </div>
@@ -144,16 +205,31 @@
                     <span class="yes">&star;&star;&star;&star;</span
                     ><span class="no">&star;</span>
                   </p>
+                  <p class="track">"Read your Mind"</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/shortnsweetdeluxe.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">Short n' Sweet</a>
+                  <p class="subtitle">Sabrina Carpenter &bull; 2024</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;</span
+                    ><span class="no">&star;</span>
+                  </p>
+                  <p class="track">"Busy Woman"</p>
                 </div>
               </div>
             </div>
             <!-- albums end -->
           </div>
           <!-- album container end -->
+          <hr class="blank" />
         </div>
-        <div class="main">
-          <p>test</p>
-        </div>
+        <div class="main"></div>
       </div>
     </div>
 
