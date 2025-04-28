@@ -45,21 +45,34 @@ body {
   opacity: 0;
 }
 .gradient {
-  background: linear-gradient(#ffffff00, #000);
+  background: linear-gradient(#ffffff00, #101010);
   width: 100%;
   backdrop-filter: blur(2px) grayscale(50%);
   height: 200px;
-  transition: height 0.8s, opacity 0.5s;
+  transition: height 0.8s, opacity 0.8s;
+  display:flex;
+  align-items: end;
 }
 .main {
   width: 512px;
-  background-color: #000;
+  background-color: #101010;
+  border-radius: 5px;
+  margin:10px 0 0 0;
+}
+.mainlinks {
+  width: 512px;
+  background-color: #101010;
+  border-radius:0 0 5px 5px;
 }
 .name {
   text-align: center;
-  font-size: 86px;
+  font-size: 42px;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px #000;
+  text-shadow: 0 0 15px #000;
+  color:#dedede;
+  padding:5px 10px;
+  font-family:rubik;
+  letter-spacing: -1px;
 }
 .shadow {
   filter: drop-shadow(0 0 10px #000);
@@ -70,35 +83,44 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: rubik;
-  padding:10px 0 5px 0;
+  padding: 10px 0 10px 0;
 }
 .links a {
-  color:#cacaca;
-  padding:3px 6px;
-  font-size:24px;
+  color: #cacaca;
+  padding: 3px 6px;
+  font-size: 24px;
   text-decoration: none;
-  border: solid 1px #00000000;
+  border: solid 2px #00000000;
   border-radius: 5px;
-  margin:0 5px;
+  margin: 0 5px;
+  transition:0.1s;
 }
 .links a:hover {
   background-color: #101010;
-  border: solid 1px #909090;
+  border: solid 2px #90909050;
 }
 iframe {
-  width:100%;
+  width: 100%;
   aspect-ratio: 16/9;
 }
 .header {
   font-family: rubik;
-  font-size:24px;
-  margin:10px 0 0 10px;
-  color:#dedede;
+  font-size: 24px;
+  margin: 10px 0 0 10px;
+  color: #dedede;
   font-weight: 100;
+  padding: 8px 0 0 0;
 }
-.spacer {
-  background: linear-gradient(to right, #00000000, #505050, #00000000);
-  height:1px;
-  border:none;
-  margin:10px 0;
+.blank {
+  opacity: 0;
+  border: none;
+  padding: 3px 0;
+}
+.content {
+  text-align: justify;
+  padding:10px;
+  font-family: rubik;
+  font-weight: 400;
+  font-size:16px;
+  color:#dedede;
 }

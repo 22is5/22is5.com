@@ -6,7 +6,6 @@ const coverImages = [
   "divineinnertension.jpg",
   "alongtheshadow.jpg",
   "amok.jpg",
-  "myironlung.jpg",
   "hawaiipartii.jpg",
   "kida.jpg",
   "bullets.jpg",
@@ -15,16 +14,23 @@ const coverImages = [
   "blackparade.jpg",
   "paramore.jpg",
   "allweknowisfalling.jpg",
-  "tomorrowsmodernboxes.jpg",
-  "eraser.jpg",
   "threecheers.jpg",
   "threecheersdeluxe.jpg",
   "hesitantalien.jpg",
   "riot.jpg",
   "moonshapedpool.jpg",
-  "inrainbows.jpg",
-  "hailtothethief.jpg",
-  "bends.jpg"
+  "bends.jpg",
+  "flairforthedramatic.jpg",
+  "withearstosee.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "twodreams.jpg",
+  "violentwaves.jpg"
 ];
 
 // Function to select a random image and set it as the background

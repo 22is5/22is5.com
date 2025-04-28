@@ -19,7 +19,7 @@ body {
 }
 .container {
   background-color: #00000000;
-  height: 42px;
+  height: 40px;
   overflow: hidden;
   transition: 0.3s;
   width: 100%;

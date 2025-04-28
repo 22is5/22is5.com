@@ -11,18 +11,146 @@
     <div class="parent">
       <div class="shadow">
         <div class="mainbg">
-          <div class="gradient"></div>
+          <div class="gradient"><p class="name">2plus2isfive</p></div>
         </div>
-        <div class="main">
+        <div class="mainlinks">
           <div class="links">
             <p><a href="https://www.discogs.com/user/sao20sin">discogs</a></p>
             <p><a href="https://discord.com/invite/RfXzAyx6nQ">discord</a></p>
             <p><a href="https://github.com/2plus2isfive">github</a></p>
             <p><a href="https://www.last.fm/user/CSharpDCS">last.fm</a></p>
           </div>
-          <hr class="spacer">
+        </div>
+
+        <div class="main">
           <p class="header">Music Library</p>
           <iframe src="library.html" frameborder="0"></iframe>
+          <hr class="blank" />
+        </div>
+        <style>
+          .albumcontainer {
+            width: 100%;
+            padding: 5px;
+            display: flex;
+          }
+          .border {
+            background-color: #ffffff10;
+            padding: 5px;
+            display: flex;
+            width: 100%;
+            transition: 0.1s;
+            border-left: solid 0px #ffffff00;
+          }
+          /* .border:hover {
+            justify-content: center;
+            border-left:solid 12px #ffffff10;
+           } */
+          .border img {
+            width: 128px;
+            transition: transform 1s, filter 0.3s;
+          }
+          .border img:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 10px #000);
+          }
+          .albuminfo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            padding: 10px 0 10px 20px;
+          }
+          .albuminfo .title {
+            font-size: 42px;
+            line-height: 0.8;
+            text-decoration: none;
+            color: #dedede;
+          }
+          .albuminfo .subtitle {
+            font-size: 20px;
+            line-height: 0.8;
+            letter-spacing: 2.3px;
+            opacity: 0.8;
+            padding: 0 0 0 2px;
+          }
+          .alternate {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            overflow-y: scroll;
+            height: 150px;
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff10 #00000000;
+          }
+          /* .alternate :nth-of-type(even) {
+            justify-content: right;
+          } */
+          .rating {
+            color: #cacaca;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            padding: 0 0 0 2px;
+            user-select: none;
+          }
+          .yes {
+            color: #ff9000;
+          }
+          .no {
+            color: #ffffff50;
+          }
+        </style>
+        <div class="main">
+          <p class="header">Favorite Albums</p>
+          <!-- album container start -->
+          <div class="alternate">
+            <!-- albums start -->
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/twodreams.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">Two Dreams</a>
+                  <p class="subtitle">Circa Survive &bull; 2022</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/violentwaves.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">Violent Waves</a>
+                  <p class="subtitle">Circa Survive &bull; 2012</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/emailsicantsendfwd.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">emails i can't send</a>
+                  <p class="subtitle">Sabrina Carpenter &bull; 2022</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;</span
+                    ><span class="no">&star;</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- albums end -->
+          </div>
+          <!-- album container end -->
+        </div>
+        <div class="main">
+          <p>test</p>
         </div>
       </div>
     </div>
