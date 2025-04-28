@@ -47,7 +47,7 @@ body {
 .gradient {
   background: linear-gradient(#ffffff00, #101010);
   width: 100%;
-  backdrop-filter: blur(2px) grayscale(50%);
+  backdrop-filter: blur(2px);
   height: 200px;
   transition: height 0.8s, opacity 0.8s;
   display:flex;
