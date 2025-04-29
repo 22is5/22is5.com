@@ -127,23 +127,25 @@ iframe {
 }
 .sites {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding:10px;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .sites a {
   color:#dedede;
   font-family: Rubik;
   text-decoration: none;
-  font-size:32px;
-  background-color: #ffffff10;
-  width:100%;
+  font-size:24px;
+  background-color: #ffffff05;
+  border:solid 2px #ffffff00;
   padding:5px 10px;
   font-family:'Jetbrains Mono', monospace;
-  text-transform: uppercase;
   font-weight: 500;
 }
 .sites a:hover {
   color:#cacaca;
+  border:solid 2px #ffffff05;
 }
