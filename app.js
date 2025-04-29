@@ -12,7 +12,6 @@ const coverImages = [
   "juturna.jpg",
   "onlettinggo.jpg",
   "blackparade.jpg",
-  "paramore.jpg",
   "allweknowisfalling.jpg",
   "threecheers.jpg",
   "threecheersdeluxe.jpg",

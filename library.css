@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: monospace;
+  font-family: 'Jetbrains Mono', monospace;
   font-size: 14px;
   color: #dedede;
   background-color: #00000000;
@@ -19,7 +20,7 @@ body {
 }
 .container {
   background-color: #00000000;
-  height: 40px;
+  height: 46px;
   overflow: hidden;
   transition: 0.3s;
   width: 100%;
@@ -41,6 +42,7 @@ p {
   justify-content: left;
   align-items: center;
   gap: 1%;
+  user-select: all;
 }
 p img {
   width: 32px;

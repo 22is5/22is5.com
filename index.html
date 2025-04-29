@@ -41,6 +41,7 @@
             width: 100%;
             transition: 0.1s;
             border-left: solid 0px #ffffff00;
+            perspective: 720px;
           }
           /* .border:hover {
             justify-content: center;
@@ -49,7 +50,10 @@
           .border img {
             width: 128px;
             transition: transform 1s, filter 0.3s;
-            transform: scale(1.1);
+            filter: drop-shadow(0 0 10px #00000090);
+          }
+          .border img:hover {
+            transform: scale(1.1) rotate3d(0, 1, 0, 20deg);
             filter: drop-shadow(0 0 10px #000);
           }
           .albuminfo {
@@ -151,7 +155,7 @@
                     href=""
                     class="title"
                     title="I Brought You My Bullets, You Brought Me Your Love"
-                    >I Brought You My Bullets...</a
+                    >I Brought You...</a
                   >
                   <p class="subtitle">My Chemical Romance &bull; 2002</p>
                   <p class="rating">
@@ -166,7 +170,9 @@
               <div class="border">
                 <img src="img/covers/dangerdays.jpg" alt="" />
                 <div class="albuminfo">
-                  <a href="" class="title" title="Danger Days">Danger Days...</a>
+                  <a href="" class="title" title="Danger Days"
+                    >Danger Days...</a
+                  >
                   <p class="subtitle">My Chemical Romance &bull; 2010</p>
                   <p class="rating">
                     <span class="yes">&star;&star;&star;&star;&star;</span>
@@ -190,7 +196,7 @@
                   <p class="rating">
                     <span class="yes">&star;&star;&star;&star;&star;</span>
                   </p>
-                  <p class="track">"Thank You for the Venom"</p>
+                  <p class="track">"Cemetery Drive"</p>
                 </div>
               </div>
             </div>
@@ -209,7 +215,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="albumcontainer">
               <div class="border">
                 <img src="img/covers/shortnsweetdeluxe.jpg" alt="" />
@@ -229,10 +235,15 @@
           <!-- album container end -->
           <hr class="blank" />
         </div>
-        <div class="main"></div>
+        <div class="main">
+          <div class="sites">
+            <a href="Aperture-Science/index.html">test</a>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="app.js"></script>
+    <p style="position: fixed; bottom: 0; left: 0"><b style="text-decoration: underline;">temporarily</b> broken on non-chromium browsers</p>
   </body>
 </html>
