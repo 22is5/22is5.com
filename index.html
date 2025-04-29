@@ -35,13 +35,15 @@
             display: flex;
           }
           .border {
-            background-color: #ffffff10;
+            --bgc: #ffffff10;
+            background-color: var(--bgc);
             padding: 5px;
             display: flex;
             width: 100%;
             transition: 0.1s;
             border-left: solid 0px #ffffff00;
             perspective: 720px;
+            justify-content: space-between;
           }
           /* .border:hover {
             justify-content: center;
@@ -51,22 +53,23 @@
             width: 128px;
             transition: transform 1s, filter 0.3s;
             filter: drop-shadow(0 0 10px #00000090);
+            height: 128px;
           }
           .border img:hover {
-            transform: scale(1.1) rotate3d(0, 1, 0, 20deg);
+            transform: scale(1.1) rotate3d(0, 1, 0, 20deg)
+              rotate3d(1, 0, 0, 5deg);
             filter: drop-shadow(0 0 10px #000);
           }
           .albuminfo {
-            width: 100%;
+            width: 340px;
             display: flex;
             justify-content: center;
             align-items: left;
             flex-direction: column;
-            padding: 10px 0 10px 20px;
           }
           .albuminfo .title {
-            font-size: 42px;
-            line-height: 0.8;
+            font-size: 24px;
+            line-height: 1.2;
             text-decoration: none;
             color: #dedede;
             transition: 0.1s;
@@ -149,13 +152,45 @@
 
             <div class="albumcontainer">
               <div class="border">
+                <img src="img/covers/flairforthedramatic.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title" title="A Flair for the Dramatic"
+                    >A Flair for the Dramatic</a
+                  >
+                  <p class="subtitle">Pierce the Veil &bull; 2007</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"The Tourist"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/moonshapedpool.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title" title="A Moon Shaped Pool"
+                    >A Moon Shaped Pool</a
+                  >
+                  <p class="subtitle">Radiohead &bull; 2016</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"Decks Dark"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
                 <img src="img/covers/bullets.jpg" alt="" />
                 <div class="albuminfo">
                   <a
                     href=""
                     class="title"
                     title="I Brought You My Bullets, You Brought Me Your Love"
-                    >I Brought You...</a
+                    >I Brought You My Bullets, You Brought Me Your Love</a
                   >
                   <p class="subtitle">My Chemical Romance &bull; 2002</p>
                   <p class="rating">
@@ -168,10 +203,41 @@
 
             <div class="albumcontainer">
               <div class="border">
+                <img src="img/covers/onlettinggo.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">On Letting Go</a>
+                  <p class="subtitle">Circa Survive &bull; 2007</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"Kicking Your Crosses Down"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/hesitantalien.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">Hesitant Alien</a>
+                  <p class="subtitle">Gerard Way &bull; 2014</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"Television All the Time"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
                 <img src="img/covers/dangerdays.jpg" alt="" />
                 <div class="albuminfo">
-                  <a href="" class="title" title="Danger Days"
-                    >Danger Days...</a
+                  <a
+                    href=""
+                    class="title"
+                    title="Danger Days: The True Lives of the Fabulous Killjoys"
+                    >Danger Days: The True Lives of the Fabulous Killjoys</a
                   >
                   <p class="subtitle">My Chemical Romance &bull; 2010</p>
                   <p class="rating">
@@ -190,7 +256,7 @@
                     href=""
                     class="title"
                     title="Three Cheers for Sweet Revenge"
-                    >Three Cheers...</a
+                    >Three Cheers for Sweet Revenge</a
                   >
                   <p class="subtitle">My Chemical Romance &bull; 2025</p>
                   <p class="rating">
@@ -203,13 +269,42 @@
 
             <div class="albumcontainer">
               <div class="border">
+                <img src="img/covers/kida.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">Kid A</a>
+                  <p class="subtitle">Radiohead &bull; 2000</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"Motion Picture Soundtrack"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/oknotok.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title" title="OK Computer OKNOTOK 1997 2017"
+                    >OK Computer OKNOTOK 1997 2017</a
+                  >
+                  <p class="subtitle">Radiohead &bull; 2017</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
+                  </p>
+                  <p class="track">"The Tourist"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
                 <img src="img/covers/emailsicantsendfwd.jpg" alt="" />
                 <div class="albuminfo">
-                  <a href="" class="title">emails i can't send</a>
+                  <a href="" class="title">emails i can't send fwd:</a>
                   <p class="subtitle">Sabrina Carpenter &bull; 2022</p>
                   <p class="rating">
-                    <span class="yes">&star;&star;&star;&star;</span
-                    ><span class="no">&star;</span>
+                    <span class="yes">&star;&star;&star;&star;&star;</span>
                   </p>
                   <p class="track">"Read your Mind"</p>
                 </div>
@@ -220,7 +315,7 @@
               <div class="border">
                 <img src="img/covers/shortnsweetdeluxe.jpg" alt="" />
                 <div class="albuminfo">
-                  <a href="" class="title">Short n' Sweet</a>
+                  <a href="" class="title">Short n' Sweet (Deluxe)</a>
                   <p class="subtitle">Sabrina Carpenter &bull; 2024</p>
                   <p class="rating">
                     <span class="yes">&star;&star;&star;&star;</span
@@ -230,29 +325,108 @@
                 </div>
               </div>
             </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/inrainbows.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">In Rainbows</a>
+                  <p class="subtitle">Radiohead &bull; 2007</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;</span
+                    ><span class="no">&star;</span>
+                  </p>
+                  <p class="track">"Reckoner"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="albumcontainer">
+              <div class="border">
+                <img src="img/covers/alongtheshadow.jpg" alt="" />
+                <div class="albuminfo">
+                  <a href="" class="title">Along the Shadow</a>
+                  <p class="subtitle">Saosin &bull; 2016</p>
+                  <p class="rating">
+                    <span class="yes">&star;&star;&star;&star;</span
+                    ><span class="no">&star;</span>
+                  </p>
+                  <p class="track">"The Stutter Says a Lot"</p>
+                </div>
+              </div>
+            </div>
             <!-- albums end -->
           </div>
           <!-- album container end -->
           <hr class="blank" />
         </div>
-
+        <style>
+          .songcontainer {
+            background-color: var(--bgc);
+            padding: 5px;
+            margin: 5px;
+          }
+          .line {
+            display: flex;
+            align-items: center;
+            font-family: rubik;
+            padding: 5px;
+            background-color: #ffffff10;
+            margin:10px 0 0 0;
+          }
+          .line img {
+            width: 36px;
+          }
+          .line p {
+            font-weight: 600;
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            padding: 0 0 0 10px;
+          }
+          .artist {
+            font-weight: 400;
+          }
+        </style>
         <div class="main">
-          <p class="header">My Sites</p>
-          <div class="sites">
-            <a href="index.html">2plus2isfive</a>
-            <a href="Aperture-Science/index.html">Aperture Science</a>
-            <a href="Black-Mesa/index.html">Black Mesa</a>
+          <p class="header">Favorite Songs</p>
+          <div class="songcontainer">
+            
+            <div class="line">
+              <img src="img/covers/twodreams.jpg" />
+              <p>
+                Our Last Shot
+                <span class="artist">Circa Survive - Two Dreams</span>
+              </p>
+            </div>
+            
+            <div class="line">
+              <img src="img/covers/twodreams.jpg" />
+              <p>
+                Our Last Shot
+                <span class="artist">Circa Survive - Two Dreams</span>
+              </p>
+            </div>
+
+            
+            <div class="line">
+              <img src="img/covers/twodreams.jpg" />
+              <p>
+                Our Last Shot
+                <span class="artist">Circa Survive - Two Dreams</span>
+              </p>
+            </div>
+
+
           </div>
         </div>
 
         <div class="main">
-          <p class="header">Sites I Like</p>
+          <p class="header">My Sites</p>
           <div class="sites">
-            <a href="https://masalt.neocities.org/">masalt</a>
-            <a href="https://mazarine.neocities.org/">Mazarine</a>
-            <a href="https://billwurtz.com/">billwurtz</a>
+            <a href="Aperture-Science/index.html">Aperture Science</a>
+            <a href="Black-Mesa/index.html">Black Mesa</a>
           </div>
-          <hr class="blank" />
         </div>
       </div>
     </div>
