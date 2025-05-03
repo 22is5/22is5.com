@@ -63,6 +63,7 @@ body {
 }
 .links a:hover {
   border-left: solid 5px #a9a9a9;
+  background: linear-gradient(to right, #bbbbbb20, #ffffff00);
 }
 .links #quit:hover {
   border-left: solid 5px #ce5757;
