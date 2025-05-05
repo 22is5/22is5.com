@@ -39,11 +39,28 @@ body {
   filter: drop-shadow(-8px 8px 0px #00000050);
   margin: 0 0 59px 51px;
 }
+.headerbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgc);
+  align-items: center;
+}
 .header {
   font-weight: 100;
   background-color: var(--bgc);
   width: fit-content;
   padding: 8px 15px;
+}
+.x {
+  font-weight: 400;
+  background-color: var(--bgc);
+  width: fit-content;
+  padding: 8px 15px;
+  color:#fff;
+  text-decoration: none;
+}
+.x:hover {
+  background-color: rgb(198, 57, 57);
 }
 .links {
   background-color: var(--bgc);
@@ -95,5 +112,5 @@ body {
 }
 .library iframe {
   width: 100%;
-  height: 512px;
+  height: 326px;
 }
