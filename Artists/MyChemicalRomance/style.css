@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/covers/threecheersdeluxe.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+.title {
+    font-family: cinzel;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    color:#dedede;
+    font-weight:500;
+    font-size:64px;
+    text-transform: uppercase;
+}
