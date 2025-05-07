@@ -48,7 +48,7 @@ p img {
   width: 32px;
 }
 .scroller {
-  scrollbar-width:thin;
+  scrollbar-width:auto;
   scrollbar-color: #ffffff10 #00000000;
   overflow-y: scroll;
   width:100%;
