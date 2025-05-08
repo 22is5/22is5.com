@@ -2,110 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
 }
 :root {
-  --bgc: #e0e1d9;
+  --bgc: #000;
+  --text: #fff;
 }
 body {
-  overscroll-behavior: none;
+  background-color: #000;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
-  background-color: var(--bgc);
+  color: var(--text);
 }
 .bg {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1;
-  display: flex;
-  justify-content: space-between;
-  z-index: -1;
-}
-.left {
-  width: 50%;
-  height: 100%;
-  background-image: url("Artists/CircaSurvive/img/covers/olg_splash1.jpg");
+  background-image: url("img/covers/avalon.jpg");
   background-size: cover;
-  background-position: -155px 0;
   filter: blur(0.5vw);
-}
-.right {
-  width: 50%;
-  height: 100%;
-  background-image: url("Artists/CircaSurvive/img/covers/olg_splash2.jpg");
-  background-size: cover;
-  background-position: 155px 0;
-  filter: blur(0.5vw);
+  opacity: 0.8;
+  z-index: -1;
 }
 .parent {
   width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-}
-.main {
-  width: 600px;
-  background-color: var(--bgc);
-  max-width: 100%;
-  filter: drop-shadow(0 0 10px #000);
-  position: relative;
-}
-.content {
-  text-align: justify;
-  padding: 15px;
-}
-.banner {
-  width: 100%;
-  height: 512px;
-  background-image: url("Artists/CircaSurvive/img/covers/onlettinggo.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: start;
+  filter: drop-shadow(0 0 10px #000);
+}
+.mainbg {
+  background-color: var(--bgc);
+  width: 512px;
+  height: 256px;
+  background-image: url("img/covers/avalon.jpg");
+  background-size: cover;
 }
 .gradient {
-  background: linear-gradient(to top, var(--bgc), #00000000);
+  background: linear-gradient(to top, var(--bgc), #00000000, #00000000);
+  width: 100%;
   height: 100%;
-  width: 100%;
-}
-.bannerTwo {
-  width: 100%;
-  height: 512px;
-  background-image: url("Artists/CircaSurvive/img/covers/olg_alt.jpg");
-  background-size: cover;
-  background-position: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
+  justify-content: start;
+  align-items: end;
+  color: #fff;
+  font-size: 26px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
-.gradientTwo {
-  background: linear-gradient(to bottom, var(--bgc), #00000000);
-  height: 100%;
-  width: 100%;
-  bottom: 0;
+.main {
+  width: 512px;
+  background-color: var(--bgc);
 }
 .header {
-  padding: 5px 10px 0px 10px;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 800;
+  letter-spacing: 5px;
+  padding: 10px 0 0 12px;
 }
-.lyrics {
-  padding: 0 10px;
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+  gap: 5px;
 }
-.track {
+.links a {
+  font-size: 18px;
+  color: #dedede;
   width: 100%;
-  position: absolute;
+  text-decoration: none;
+  background-color: #ffffff10;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.trackTwo {
+.links a:hover {
+  background-color: #ffffff20;
+}
+.multilinks {
   width: 100%;
-  text-align: right;
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
 }
-.HELPME {
-  height: 3610px;
+.spacer {
+  height: 5px;
+  width: 100%;
 }
