@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Elite&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bgc: #efefef;
+  --content: #000000;
+  --title: #a95e2f;
+  --font: 13px;
+}
+body {
+  background-color: #000;
+  font-family: Cinzel;
+  overscroll-behavior: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/covers/juturna.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.25vw);
+  z-index: -1;
+}
+.parent {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 10px #000);
+}
+.main {
+  width: calc(600 * 5) px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgc);
+  margin: 0 10px;
+}
+.page {
+  width: 600px;
+  height: 600px;
+  padding: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  color: var(--title);
+  font-weight: 600;
+  font-size: var(--font);
+  line-height: 1;
+  text-transform: uppercase;
+}
+.lyrics {
+  color: var(--content);
+  font-weight: 500;
+  font-size: var(--font);
+  text-align: justify;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.link {
+  font-size: 11px;
+}
+.albumTitle {
+  font-size: 28px;
+  color: var(--title);
+  padding: 0 0 10px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
