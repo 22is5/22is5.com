@@ -29,16 +29,19 @@ body {
   height: 100%;
   background-image: url("/Artists/CircaSurvive/img/covers/olg_splash1.jpg");
   background-size: cover;
-  background-position: -155px 0;
-  filter: blur(0.5vw);
+  background-position: center;
+  filter: blur(0.25vw);
+}
+.center {
+  width:512px;
 }
 .right {
   width: 50%;
   height: 100%;
   background-image: url("/Artists/CircaSurvive/img/covers/olg_splash2.jpg");
   background-size: cover;
-  background-position: 155px 0;
-  filter: blur(0.5vw);
+  background-position: center;
+  filter: blur(0.25vw);
 }
 .parent {
   width: 100%;
