@@ -8,6 +8,7 @@
   --bgc: #000;
   --text: #e7dcd2;
   --tt: lowercase;
+  --rad: 5px;
 }
 body {
   background-color: #000;
@@ -41,6 +42,7 @@ body {
   height: 256px;
   background-image: url("img/covers/avalon.jpg");
   background-size: cover;
+  border-radius: var(--rad) var(--rad) 0 0;
 }
 .gradient {
   background: linear-gradient(to top, var(--bgc), #00000000, #00000000);
@@ -55,6 +57,7 @@ body {
   text-transform: var(--tt);
   letter-spacing: 5px;
   font-weight: 400;
+  border-radius: var(--rad) var(--rad) 0 0;
 }
 .main {
   width: 512px;
@@ -138,6 +141,7 @@ body {
   background-image: url("img/covers/avalon.jpg");
   background-size: cover;
   background-position: 100% 100%;
+  border-radius: 0 0 var(--rad) var(--rad);
 }
 .gradient2 {
   background: linear-gradient(to bottom, var(--bgc), #00000000, #00000000);
@@ -151,6 +155,7 @@ body {
   padding: 8px 12px;
   letter-spacing: 5px;
   font-weight: 400;
+  border-radius: 0 0 var(--rad) var(--rad);
 }
 .subtitle {
   font-size: 18px;
