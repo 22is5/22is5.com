@@ -8,7 +8,7 @@
   --bgc: #000;
   --text: #e7dcd2;
   --tt: lowercase;
-  --rad: 5px;
+  --rad: 8px;
 }
 body {
   background-color: #000;
@@ -63,6 +63,8 @@ body {
   width: 512px;
   max-width: 100%;
   background-color: var(--bgc);
+  border-radius: var(--rad) var(--rad) 0 0;
+  border-radius: var(--rad) var(--rad) var(--rad) var(--rad);
 }
 .header {
   font-size: 18px;
