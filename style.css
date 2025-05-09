@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +6,12 @@
 }
 :root {
   --bgc: #000;
-  --text: #fff;
+  --text: #eadcd1;
+  --tt: lowercase;
 }
 body {
   background-color: #000;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Noto Serif Display", "Times New Roman", Times, serif;
   color: var(--text);
 }
 .bg {
@@ -45,11 +47,12 @@ body {
   display: flex;
   justify-content: start;
   align-items: end;
-  color: #fff;
+  color: var(--text);
   font-size: 26px;
   padding: 8px 12px;
-  text-transform: uppercase;
+  text-transform: var(--tt);
   letter-spacing: 5px;
+  font-weight: 400;
 }
 .main {
   width: 512px;
@@ -57,7 +60,7 @@ body {
 }
 .header {
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: var(--tt);
   letter-spacing: 5px;
   padding: 10px 0 0 12px;
 }
@@ -70,12 +73,12 @@ body {
 }
 .links a {
   font-size: 18px;
-  color: #dedede;
+  color: var(--text);
   width: 100%;
   text-decoration: none;
   background-color: #ffffff10;
   padding: 5px 10px;
-  text-transform: uppercase;
+  text-transform: var(--tt);
   letter-spacing: 2px;
 }
 .links a:hover {
