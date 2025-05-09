@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 :root {
   --bgc: #000;
-  --text: #eadcd1;
+  --text: #e7dcd2;
   --tt: lowercase;
 }
 body {
@@ -20,6 +20,7 @@ body {
   height: 100vh;
   background-image: url("img/covers/avalon.jpg");
   background-size: cover;
+  background-position: center;
   filter: blur(0.5vw);
   opacity: 0.8;
   z-index: -1;
@@ -30,12 +31,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   filter: drop-shadow(0 0 10px #000);
 }
 .mainbg {
   background-color: var(--bgc);
   width: 512px;
+  max-width: 100%;
   height: 256px;
   background-image: url("img/covers/avalon.jpg");
   background-size: cover;
@@ -48,7 +50,7 @@ body {
   justify-content: start;
   align-items: end;
   color: var(--text);
-  font-size: 26px;
+  font-size: 28px;
   padding: 8px 12px;
   text-transform: var(--tt);
   letter-spacing: 5px;
@@ -56,6 +58,7 @@ body {
 }
 .main {
   width: 512px;
+  max-width: 100%;
   background-color: var(--bgc);
 }
 .header {
@@ -80,9 +83,11 @@ body {
   padding: 5px 10px;
   text-transform: var(--tt);
   letter-spacing: 2px;
+  transition: 0.2s;
 }
 .links a:hover {
-  background-color: #ffffff20;
+  background-color: #ffffff15;
+  color: #c69a77;
 }
 .multilinks {
   width: 100%;
@@ -93,4 +98,65 @@ body {
 .spacer {
   height: 5px;
   width: 100%;
+}
+.albumContainer {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cover {
+  width: 128px;
+  height: 128px;
+}
+.albumInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+.albumTitle {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+.artist {
+  font-size: 24px;
+  font-weight: 200;
+  padding: 0 0 0 2px;
+  opacity: 0.65;
+}
+
+.mainbg2 {
+  background-color: var(--bgc);
+  width: 512px;
+  max-width: 100%;
+  height: 256px;
+  background-image: url("img/covers/avalon.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.gradient2 {
+  background: linear-gradient(to bottom, var(--bgc), #00000000, #00000000);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  color: var(--text);
+  font-size: 28px;
+  padding: 8px 12px;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+.subtitle {
+  font-size: 18px;
+  opacity: 0.65;
+}
+.title {
+  text-align: right;
+  line-height: 0.8;
 }
