@@ -34,11 +34,9 @@ body {
 .title {
     font-size:96px;
     text-transform: uppercase;
-    font-weight: 800;
 }
 .links {
     transform: translate(0, -25px);
-    font-size: 28px;
     display:flex;
     padding:0 5px;
 }
@@ -46,4 +44,7 @@ body {
     color:var(--text);
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    letter-spacing: 3px;
 }
