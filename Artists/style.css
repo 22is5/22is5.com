@@ -31,7 +31,7 @@ body {
 }
 .link:hover {
   border-left:solid 5px #cacaca;
-  background: linear-gradient(to right, #cacaca10, #00000000);
+  background: linear-gradient(to right, #cacaca10, #ffffff08);
 }
 .cover {
   width: 64px;
