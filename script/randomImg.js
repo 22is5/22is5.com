@@ -24,7 +24,7 @@ const coverImages = [
   "twodreams.jpg",
   "twodreams.jpg",
   "violentwaves.jpg",
-  "dangerdays.jpg"
+  "dangerdays.jpg",
 ];
 
 // Function to select a random image and set it as the background
