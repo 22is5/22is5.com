@@ -27,10 +27,10 @@ body {
   align-items: center;
   background-color: #ffffff08;
   text-decoration: none;
-  border-left:solid 5px #cacaca00;
+  border-left: solid 5px #cacaca00;
 }
 .link:hover {
-  border-left:solid 5px #cacaca;
+  border-left: solid 5px #cacaca;
   background: linear-gradient(to right, #cacaca10, #ffffff08);
 }
 .cover {
@@ -40,7 +40,7 @@ body {
 }
 .title {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   padding: 0px 10px;
   font-family: "Times New Roman", Times, serif;
@@ -66,7 +66,7 @@ body {
   border: solid 2px #90ff90;
 }
 #unofficial {
-  border: solid 2px #ff9090;
+  border: solid 2px #9094ff;
 }
 
 .notlink {
