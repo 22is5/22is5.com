@@ -4,25 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Planetary (GO!)</title>
+    <title>Document</title>
   </head>
   <body>
-    <div class="bg"></div>
+    <div class="mainbg"></div>
     <div class="parent">
-      <div class="main">
-        <!-- SLIDE START -->
-        <div class="slide">
-          <p class="header">2plus2isfive<img src="Artists/MyChemicalRomance/img/spider.webp" /></p>
-          <div class="links">
-            <a href="https://github.com/2plus2isfive" class="link">Github</a>
-            <a href="https://github.com/2plus2isfive" class="link">Neocities</a>
-            <a href="https://2plus2isfive.github.io/Experiments/" class="link">Experiments</a>
-            <a href="" class="link">Discord</a>
-            <a href="" class="link">Discogs</a>
+      <div class="mainContainer">
+        <div class="main">
+          <div class="albums">
+            <!-- ALBUM START -->
+            <div class="albumContainer" style="background-image: url('img/covers/onlettinggo.jpg')">
+              <div class="albumFilter">
+                <img class="cover" src="Artists/CircaSurvive/img/covers/olg_splash1.jpg" />
+                <div class="albumInfo">
+                  <p class="title">On Letting Go (Deluxe)</p>
+                  <p class="artist">Circa Survive &bull; 2007</p>
+                </div>
+              </div>
+            </div>
+            <!-- ALBUM END -->
+
+            <!-- ALBUM START -->
+            <div class="albumContainer" style="background-image: url(img/covers/avalon.jpg); background-position: 0 -100px">
+              <div class="albumFilter">
+                <img class="cover" src="img/covers/avalon.jpg" />
+                <div class="albumInfo">
+                  <p class="title">Avalon</p>
+                  <p class="artist">Anthony Green &bull; 2008</p>
+                </div>
+              </div>
+            </div>
+            <!-- ALBUM END -->
+
+            <!-- ALBUM START -->
+            <div class="albumContainer" style="background-image: url(img/covers/divineinnertension.jpg)">
+              <div class="albumFilter">
+                <img class="cover" src="img/covers/divineinnertension.jpg" />
+                <div class="albumInfo">
+                  <p class="title">Divine Inner Tension</p>
+                  <p class="artist">Hail the Sun &bull; 2023</p>
+                </div>
+              </div>
+            </div>
+            <!-- ALBUM END -->
+
+            <!-- ALBUM START -->
+            <div class="albumContainer" style="background-image: url(img/covers/violentwaves.jpg)">
+              <div class="albumFilter">
+                <img class="cover" src="img/covers/violentwaves.jpg" />
+                <div class="albumInfo">
+                  <p class="title">Violent Waves</p>
+                  <p class="artist">Circa Survive &bull; 2012</p>
+                </div>
+              </div>
+            </div>
+            <!-- ALBUM END -->
           </div>
         </div>
-        <!-- SLIDE END -->
       </div>
     </div>
+    <script src="script/randomImg.js"></script>
   </body>
 </html>

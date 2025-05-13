@@ -1,31 +1,5 @@
 // Array of image filenames in the /img/covers/ directory
-const coverImages = [
-  "emailsicantsendfwd.jpg",
-  "shortnsweet.jpg",
-  "shortnsweetdeluxe.jpg",
-  "divineinnertension.jpg",
-  "amok.jpg",
-  "hawaiipartii.jpg",
-  "kida.jpg",
-  "bullets.jpg",
-  "juturna.jpg",
-  "onlettinggo.jpg",
-  "blackparade.jpg",
-  "allweknowisfalling.jpg",
-  "threecheersdeluxe.jpg",
-  "flairforthedramatic.jpg",
-  "withearstosee.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "twodreams.jpg",
-  "violentwaves.jpg",
-  "dangerdays.jpg",
-];
+const coverImages = ["dangerdays.jpg", "violentwaves.jpg", "shortnsweetdeluxe.jpg"];
 
 // Function to select a random image and set it as the background
 function setRandomBackground() {
