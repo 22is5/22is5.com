@@ -14,6 +14,7 @@ h2 {
   text-transform: uppercase;
   font-size: 26px;
   letter-spacing: 3px;
+  padding: 0 0 0 1px;
 }
 body {
   background-color: #050505;
