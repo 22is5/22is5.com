@@ -6,6 +6,7 @@
 }
 :root {
   --link: #913939;
+  --color: #e6d9c2;
 }
 h2 {
   font-family: "Times New Roman", Times, serif;
@@ -16,7 +17,7 @@ h2 {
 }
 body {
   background-color: #050505;
-  color: #cacaca;
+  color: var(--color);
   font-family: Rubik;
   font-size: 24px;
 }
@@ -78,12 +79,6 @@ embed {
   align-items: end;
   color: #999;
   font-size: 32px;
-}
-.name {
-  letter-spacing: 1px;
-}
-.profile a {
-  color: #dedede;
 }
 /* .marquee {
   width: 100%;
