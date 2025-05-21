@@ -20,6 +20,7 @@
           <h2>Links</h2>
           <p class="option"><a href="https://discord.com/invite/F9RPnNjXc5">Discord</a></p>
           <p class="option"><a href="https://discogs.com/user/sao20sin">Discogs</a></p>
+          <p class="option"><a href="https://www.last.fm/user/CSharpDCS">last.fm</a></p>
         </div>
         <br />
         <div class="class">
@@ -38,8 +39,27 @@
           <h2>Misc</h2>
           <p class="option"><a href="Experiments/colors.html">Color Pallete</a></p>
         </div>
+      </div>
+    </div>
+    <!-- LAST FM NOW PLAYING
+        <div class="class">
+          <h2>Currently Playing</h2>
+          <p class="option"><a href="" id="song">...</a></p>
+        </div>
         <br />
       </div>
     </div>
-  </body>
+    <script type="text/javascript">
+      let user = "CSharpDCS";
+      let url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
+      let song = document.querySelector("#song");
+      fetch(url)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (json) {
+          song.innerHTML = json["track"]["name"] + " - " + json["track"]["artist"]["#text"];
+        });
+    </script>
+  --></body>
 </html>
