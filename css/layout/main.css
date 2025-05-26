@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/covers/avalon.jpg");
+  background-size: cover;
+  background-position: top;
+  filter: blur(8px);
+  z-index: -1;
+}
+.parent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 600px;
+  max-width: 95%;
+  padding: 15px;
+  background-color: #000;
+  min-height: 95vh;
+  max-height: fit-content;
+}
+.header {
+  font-weight: bold;
+  font-size: 28px;
+}
+.subheader {
+  color: #dedede;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  font-family: "Jetbrains Mono";
+  font-weight: bold;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-transform: lowercase;
+}
+.link {
+  color: #d08043;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+.content {
+  font-size: 16px;
+  color: #dedede;
+}
+.content a {
+  color: #d08043;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+:visited {
+  color: #d08043;
+  text-decoration: none;
+  font-weight: bold;
+}
