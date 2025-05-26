@@ -12,7 +12,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-image: url("https://cdn.22is5.org/img/covers/avalon.jpg");
+  background-image: url("https://raw.githubusercontent.com/2plus2isfive/cdn/refs/heads/main/img/covers/avalon.jpg");
   background-size: cover;
   background-position: top;
   filter: blur(8px);
