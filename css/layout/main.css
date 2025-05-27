@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #080808;
+  background-color: #000;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-family: rubik;
 }
 .parent {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-bottom: solid 5px #101010;
 }
 .banner {
   background: #080808;
@@ -51,13 +51,13 @@ body {
   width: 256px;
   font-size: 32px;
   font-weight: 400;
-  background-color: #101010;
+  background-color: #151515;
   letter-spacing: 2px;
   padding: 0 0 0 5px;
 }
 .sidebar .links {
   margin: 10px;
-  border: solid 5px #101010;
+  border: solid 5px #151515;
 }
 .sidebar a {
   color: #999;
@@ -70,9 +70,13 @@ body {
 }
 .sidebar a:hover {
   background-color: #0b0b0b;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 12px;
 }
 .content {
-  background-color: #050505;
+  background-color: #080808;
   width: 100%;
+  padding: 10px;
+}
+#current {
+  border-left: solid 5px #252525;
 }
