@@ -27,18 +27,18 @@ body {
 .left {
   width: 50%;
   height: 100%;
-  background-image: url("/Artists/CircaSurvive/img/covers/olg_splash1.jpg");
+  background-image: url("https://github.com/2plus2isfive/cdn/blob/main/img/covers/olg_splash1.jpg?raw=true");
   background-size: cover;
   background-position: center;
   filter: blur(0.25vw);
 }
 .center {
-  width:512px;
+  width: 512px;
 }
 .right {
   width: 50%;
   height: 100%;
-  background-image: url("/Artists/CircaSurvive/img/covers/olg_splash2.jpg");
+  background-image: url("https://github.com/2plus2isfive/cdn/blob/main/img/covers/olg_splash2.jpg?raw=true");
   background-size: cover;
   background-position: center;
   filter: blur(0.25vw);
@@ -62,7 +62,7 @@ body {
 .banner {
   width: 100%;
   height: 512px;
-  background-image: url("/Artists/CircaSurvive/img/covers/onlettinggo.jpg");
+  background-image: url("https://github.com/2plus2isfive/cdn/blob/main/img/covers/onlettinggo.jpg?raw=true");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -77,7 +77,7 @@ body {
 .bannerTwo {
   width: 100%;
   height: 512px;
-  background-image: url("/Artists/CircaSurvive/img/covers/olg_alt.jpg");
+  background-image: url("https://github.com/2plus2isfive/cdn/blob/main/img/covers/olg_alt.jpg?raw=true");
   background-size: cover;
   background-position: center;
   display: flex;

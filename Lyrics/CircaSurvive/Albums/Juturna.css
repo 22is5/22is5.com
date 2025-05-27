@@ -22,7 +22,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-image: url("/img/covers/juturna.jpg");
+  background-image: url("https://github.com/2plus2isfive/cdn/blob/main/img/covers/juturna.jpg?raw=true");
   background-size: cover;
   background-position: center;
   filter: blur(0.25vw);

@@ -65,8 +65,8 @@ body {
   width: 256px;
   font-size: 32px;
   font-weight: 100;
-  padding: 0 0 0 10px;
   transition: padding 0.1s;
+  padding: 0 0 0 8px;
 }
 .sidebar a:hover {
   background-color: #0b0b0b;
@@ -77,6 +77,21 @@ body {
   width: 100%;
   padding: 10px;
 }
+.content .header {
+  font-size: 32px;
+  color: #cacaca;
+}
+.content a {
+  font-size: 24px;
+  color: #559;
+  text-decoration: none;
+}
 #current {
-  border-left: solid 5px #252525;
+  background-color: #101010;
+}
+.album {
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.75);
+  height: 64px;
 }

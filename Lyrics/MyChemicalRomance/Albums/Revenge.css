@@ -14,9 +14,9 @@
   height: 100vh;
   z-index: -1;
   opacity: 0.65;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  background-image: url(/img/covers/threecheersdeluxe.jpg);
+  background-image: url(https://github.com/2plus2isfive/cdn/blob/main/img/hdcovers/threecheersdeluxe.jpg?raw=true);
   background-size: cover;
   background-position: center;
 }
@@ -43,7 +43,7 @@ body {
   backdrop-filter: invert(100%) contrast(30%) brightness(150%) grayscale(100%);
 }
 .track {
-  padding:15px 15px 0 15px;
+  padding: 15px 15px 0 15px;
 }
 .title {
   color: var(--red);
@@ -57,7 +57,7 @@ body {
 }
 .mainbg {
   background-color: #fefefe;
-  background-image: url(/img/covers/threecheersdeluxe.jpg);
+  background-image: url(https://github.com/2plus2isfive/cdn/blob/main/img/hdcovers/threecheersdeluxe.jpg?raw=true);
   background-size: cover;
   background-position: center;
 }
@@ -67,6 +67,6 @@ body {
   justify-content: center;
   text-align: center;
   color: var(--darkred);
-  font-size:20px;
+  font-size: 20px;
   font-weight: 600;
 }
