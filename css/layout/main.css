@@ -4,72 +4,75 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #000;
+  background-color: #080808;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-}
-.bg {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://raw.githubusercontent.com/2plus2isfive/cdn/refs/heads/main/img/covers/avalon.jpg");
-  background-size: cover;
-  background-position: top;
-  filter: blur(8px);
-  z-index: -1;
+  font-family: rubik;
 }
 .parent {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.banner {
+  background: #080808;
+  border-bottom: solid 5px #101010;
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  font-size: 56px;
+  gap: 18px;
+}
+.banner a {
+  color: #cacaca;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 .main {
-  width: 600px;
-  max-width: 95%;
-  padding: 15px;
-  background-color: #000;
-  min-height: 95vh;
-  max-height: fit-content;
-}
-.header {
-  font-weight: bold;
-  font-size: 28px;
-}
-.subheader {
-  color: #dedede;
-  font-size: 18px;
-  margin: 10px 0 0 0;
-  font-family: "Jetbrains Mono";
-  font-weight: bold;
-}
-.links {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  text-transform: lowercase;
+  justify-content: space-between;
 }
-.link {
-  color: #d08043;
-  font-weight: bold;
+.sidebar {
+  background-color: #080808;
+  border-right: solid 5px #101010;
+}
+.sidebar .links {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.sidebar .header {
+  color: #cacaca;
   text-decoration: none;
-  font-size: 18px;
+  width: 256px;
+  font-size: 32px;
+  font-weight: 400;
+  background-color: #101010;
+  letter-spacing: 2px;
+  padding: 0 0 0 5px;
+}
+.sidebar .links {
+  margin: 10px;
+  border: solid 5px #101010;
+}
+.sidebar a {
+  color: #999;
+  text-decoration: none;
+  width: 256px;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 0 0 0 10px;
+  transition: padding 0.1s;
+}
+.sidebar a:hover {
+  background-color: #0b0b0b;
+  padding: 0 0 0 15px;
 }
 .content {
-  font-size: 16px;
-  color: #dedede;
-}
-.content a {
-  color: #d08043;
-  text-decoration: none;
-  font-weight: bold;
-}
-.content a:hover {
-  text-decoration: underline;
-}
-:visited {
-  color: #d08043;
-  text-decoration: none;
-  font-weight: bold;
+  background-color: #050505;
+  width: 100%;
 }
