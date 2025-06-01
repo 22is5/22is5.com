@@ -47,6 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   text-shadow: 0 0 10px #000000;
+  user-select: none;
 }
 .title {
   font-size: 64px;
@@ -65,6 +66,7 @@ body {
   background-color: #080808;
   padding: 10px;
   z-index: 20;
+  user-select: none;
 }
 .linkBar a {
   color: #cacaca;
