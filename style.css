@@ -97,6 +97,9 @@ body {
   background-color: #101010;
   padding: 10px 10px 10px 10px;
 }
+.contentSection :nth-child(even) {
+  background-color: #161616;
+}
 .contentSection a {
   color: #cacaca;
 }
