@@ -3,22 +3,113 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --g1: #1d4c80;
+  --g2: #058051;
+}
 body {
-  background-color: #000;
-  color: var(--cswhite);
+  background: linear-gradient(-15deg, var(--g1), var(--g2));
+  color: #cacaca;
   font-size: 24px;
   font-family: "Jetbrains Mono", monospace;
-  padding: 15px;
+  width: 100%;
+  height: 100vh;
+  padding: 8px;
 }
-a {
-  color: var(--csred);
-  font-weight: 800;
-  text-decoration: none;
+.parent {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scrollbar-color: #ffffff20 #00000000;
+  border-radius: 8px;
+}
+.main {
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.section {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 128px;
+  background: linear-gradient(-15deg, var(--g1), var(--g2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 10px #000000;
 }
 .title {
+  font-size: 64px;
   font-weight: bold;
+  padding: 12px;
+  color: #dedede;
 }
-.comment {
-  opacity: 0.5;
-  font-weight: 100;
+.spacer {
+  width: 12px;
+}
+.linkBar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #080808;
+  padding: 10px;
+  z-index: 20;
+}
+.linkBar a {
+  color: #cacaca;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: solid 2px #00000000;
+}
+.linkBar a:hover {
+  background-color: #ffffff08;
+}
+#current {
+  background-color: #ffffff08;
+  border: solid 2px #ffffff05;
+}
+.content {
+  background-color: #080808;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+.content h2 {
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #101010;
+  width: fit-content;
+  padding: 5px 10px 0 10px;
+}
+.contentSection {
+  font-size: 16px;
+  background-color: #101010;
+  padding: 10px 10px 10px 10px;
+}
+.contentSection a {
+  color: #cacaca;
+}
+
+/* stuff for the underscore flashing effect */
+.flashing-underscore {
+  animation: blink 1.2s steps(1) infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
