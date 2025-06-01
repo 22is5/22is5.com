@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.22is5.org/css/colors.css" />
     <link rel="stylesheet" href="https://cdn.22is5.org/css/fonts/jetbrains-mono.css" />
-    <link rel="stylesheet" href="css/layout/main.css" />
-    <link rel="stylesheet" href="https://cdn.22is5.org/css/fonts/rubik.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta property="og:url" content="https://22is5.org/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="2 + 2 = 5" />
@@ -15,41 +14,29 @@
     <title>2plus2isfive</title>
   </head>
   <body>
-    <div class="parent">
-      <div class="banner">
-        <div class="links">
-          <a href="">2plus2isfive</a>
-        </div>
-      </div>
+    <pre>
+<span class="comment">/* 2plus2isfive */</span>
 
-      <div class="main">
-        <div class="sidebar">
-          <div class="links">
-            <p class="header">Internal</p>
-            <a href="/index.html" id="current">Home</a>
-            <a href="/Lyrics/Home.html">Lyric Booklets</a>
-            <a href="/credits.html">Credits</a>
-          </div>
-          <div class="links">
-            <p class="header">External</p>
-            <a href="https://github.com/2plus2isfive">Github</a>
-            <a href="https://neocities.org/site/2plus2isfive">Neocities</a>
-            <a href="https://www.discogs.com/user/sao20sin">Discogs</a>
-            <a href="https://discord.com/invite/F9RPnNjXc5">Discord</a>
-          </div>
-          <div class="links">
-            <p class="header">Subdomains</p>
-            <a href="https://aperture.22is5.org">aperture</a>
-            <a href="https://blackmesa.22is5.org">blackmesa</a>
-            <a href="https://cdn.22is5.org">cdn</a>
-            <a href="https://experiments.22is5.org">experiments</a>
-          </div>
-        </div>
+.externalLinks {
+    --github: url('<a href="https://github.22is5.org">https://github.22is5.org</a>');
+    --neocities: url('<a href="https://neocities.22is5.org">https://neocities.22is5.org</a>');
+    --discogs: url('<a href="https://discogs.22is5.org">https://discogs.22is5.org</a>');
+    --discord: url('<a href="https://discord.22is5.org">https://discord.22is5.org</a>');
+}
 
-        <div class="content">
-          <p>not sure what to add here so just click one of the sidebar options</p>
-        </div>
-      </div>
-    </div>
+.subdomains {
+    --aperture: url('<a href="https://aperture.22is5.org">https://aperture.22is5.org</a>');
+    --cdn: url('<a href="https://cdn.22is5.org">https://cdn.22is5.org</a>');
+    --experiments: url('<a href="https://experiments.22is5.org">https://experiments.22is5.org</a>'); <span class="comment">/* for
+    when i'm bored */</span>
+    --lyrics: url('<a href="https://lyrics.22is5.org">https://lyrics.22is5.org</a>'); <span class="comment">/* lyrics as in cd 
+    lyric booklet recreations */</span>
+}
+
+.misc {
+    --credits: url('<a href="https://credits.22is5.org">https://credits.22is5.org</a>');
+}
+
+<span class="comment">/* this css wouldn't even work */</span></pre>
   </body>
 </html>
