@@ -26,7 +26,6 @@ body {
   overflow-y: scroll;
   scrollbar-width: none;
   scrollbar-color: #ffffff20 #00000000;
-  border-radius: 8px;
 }
 .main {
   width: 600px;
