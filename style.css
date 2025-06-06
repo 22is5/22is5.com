@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --g1: #1d4c80;
-  --g2: #058051;
+  --g1: #875252;
+  --g2: #7d2727;
 }
 body {
   background: linear-gradient(-15deg, var(--g1), var(--g2));
