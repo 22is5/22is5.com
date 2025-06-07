@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --g1: #875252;
-  --g2: #7d2727;
+  --g1: #080808;
+  --g2: #080808;
 }
 body {
   background: linear-gradient(-15deg, var(--g1), var(--g2));
@@ -117,3 +117,31 @@ body {
     opacity: 1;
   }
 }
+/* ALBUM SECTION */
+.albums {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.album {
+  width: 100%;
+  display: flex;
+}
+.albumInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.albumTitle {
+  font-size: 32px;
+}
+.albumArtist {
+  font-size: 24px;
+  color: #909090;
+}
+.cover {
+  width: 20%;
+}
+/* ALBUM SECTION */
