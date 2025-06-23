@@ -47,6 +47,8 @@ a {
 }
 a img {
   width: 64px;
+  height: 64px;
+  aspect-ratio: 1/1;
 }
 .info {
   width: 100%;
@@ -74,4 +76,14 @@ a img {
 }
 img {
   border: solid 2px #000;
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1/1;
+}
+.mainbg {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
 }
