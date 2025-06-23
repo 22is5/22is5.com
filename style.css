@@ -1,5 +1,6 @@
 @import url("https://cdn.22is5.org/css/reset.css");
 @import url("https://cdn.22is5.org/css/fonts/jetbrains-mono.css");
+@import url("https://cdn.22is5.org/css/fonts/minecraft.css");
 body {
   background-color: #cacaca;
   color: #000;
@@ -49,7 +50,7 @@ a img {
 }
 .info {
   width: 100%;
-  height: 64px;
+  height: 68px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +63,14 @@ a img {
 .title {
   font-weight: 600;
   font-size: 20px;
+}
+.titlemc {
+  font-size: 24px;
+  font-family: "Minecraft Bold";
+}
+.subtitlemc {
+  font-family: "Minecraft Regular";
+  font-size: 24px;
 }
 img {
   border: solid 2px #000;
