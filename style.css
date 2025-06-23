@@ -1,6 +1,9 @@
 @import url("https://cdn.22is5.org/css/reset.css");
 @import url("https://cdn.22is5.org/css/fonts/jetbrains-mono.css");
 @import url("https://cdn.22is5.org/css/fonts/minecraft.css");
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #cacaca;
   color: #000;
