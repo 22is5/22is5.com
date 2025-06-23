@@ -1,147 +1,68 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-:root {
-  --g1: #080808;
-  --g2: #080808;
-}
+@import url("https://cdn.22is5.org/css/reset.css");
+@import url("https://cdn.22is5.org/css/fonts/jetbrains-mono.css");
 body {
-  background: linear-gradient(-15deg, var(--g1), var(--g2));
-  color: #cacaca;
-  font-size: 24px;
-  font-family: "Jetbrains Mono", monospace;
+  background-color: #cacaca;
+  color: #000;
+  font-family: "Jetbrains Mono";
+  font-size: 18px;
+}
+.wrapper {
   width: 100%;
   height: 100vh;
-  padding: 8px;
-}
-.parent {
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  overflow-x: hidden;
-  overflow-y: scroll;
   scrollbar-width: none;
-  scrollbar-color: #ffffff20 #00000000;
-}
-.main {
-  width: 600px;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  padding: 12px;
+  gap: 24px;
+}
+.name {
+  padding: 0 12px;
+  font-size: 56px;
+  font-weight: 600;
 }
 .section {
-  width: 100%;
+  background-color: #cacaca;
+  border: solid 2px #000;
+  padding: 12px;
+  position: relative;
+  width: 556px;
 }
-.header {
-  width: 100%;
-  height: 128px;
-  background: linear-gradient(-15deg, var(--g1), var(--g2));
+h1 {
+  position: absolute;
+  background-color: #cacaca;
+  transform: translate(0, -23px);
+  padding: 0 4px;
+  font-weight: 600;
+}
+a {
+  border: solid 2px #000;
   display: flex;
+  gap: 12px;
+  background-color: #cacaca;
+  padding: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+a img {
+  width: 64px;
+}
+.info {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-shadow: 0 0 10px #000000;
-  user-select: none;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .title {
-  font-size: 64px;
-  font-weight: bold;
-  padding: 12px;
-  color: #dedede;
-}
-.spacer {
-  width: 12px;
-}
-.linkBar {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  background-color: #080808;
-  padding: 10px;
-  z-index: 20;
-  user-select: none;
-}
-.linkBar a {
-  color: #cacaca;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: solid 2px #00000000;
-}
-.linkBar a:hover {
-  background-color: #ffffff08;
-}
-#current {
-  background-color: #ffffff08;
-  border: solid 2px #ffffff05;
-}
-.content {
-  background-color: #080808;
-  padding: 10px 10px;
-  font-size: 16px;
-}
-.content h2 {
+  font-weight: 600;
   font-size: 20px;
-  font-weight: 800;
-  background-color: #101010;
-  width: fit-content;
-  padding: 5px 10px 0 10px;
 }
-.contentSection {
-  font-size: 16px;
-  background-color: #101010;
-  padding: 10px 10px 10px 10px;
+img {
+  border: solid 2px #000;
 }
-/* .contentSection :nth-child(even) {
-  background-color: #161616;
-} */
-.contentSection a {
-  color: #cacaca;
-}
-
-/* stuff for the underscore flashing effect */
-.flashing-underscore {
-  animation: blink 1.2s steps(1) infinite;
-}
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-/* ALBUM SECTION */
-.albums {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.album {
-  width: 100%;
-  display: flex;
-}
-.albumInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 10px;
-}
-.albumTitle {
-  font-size: 32px;
-}
-.albumArtist {
-  font-size: 24px;
-  color: #909090;
-}
-.cover {
-  width: 20%;
-}
-/* ALBUM SECTION */
