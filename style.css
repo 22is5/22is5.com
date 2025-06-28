@@ -1,14 +1,7 @@
-@import url("https://cdn.22is5.org/css/reset.css");
-@import url("https://cdn.22is5.org/css/colors.css");
-@import url("https://cdn.22is5.org/css/fonts/jetbrains-mono.css");
-@import url("https://cdn.22is5.org/css/fonts/minecraft.css");
-@import url("https://cdn.22is5.org/css/fonts/mona-sans.css");
-* {
-  box-sizing: border-box;
-}
+@import url("https://cdn.22is5.com/css/reset.css");
+@import url("https://cdn.22is5.com/css/colors.css");
+@import url("https://cdn.22is5.com/fonts/mona-sans.css");
 a {
-  text-decoration: none;
-  color: inherit;
   width: fit-content;
 }
 body {
