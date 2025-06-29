@@ -13,8 +13,10 @@ body {
   height: 100vh;
   overflow-y: scroll;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 12px;
+  gap: 12px;
 }
 .main {
   width: 512px;
