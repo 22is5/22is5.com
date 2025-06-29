@@ -4,6 +4,11 @@
 a {
   width: fit-content;
 }
+* {
+  background-image: url("/magnum-opus.png");
+  background-position: center;
+  background-size: cover;
+}
 body {
   font-family: "Mona Sans";
   background-color: #efefef;
