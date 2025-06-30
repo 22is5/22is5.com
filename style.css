@@ -48,3 +48,7 @@ h3 {
   flex-direction: column;
   gap: 12px;
 }
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
