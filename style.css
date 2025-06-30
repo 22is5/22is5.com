@@ -5,9 +5,9 @@ a {
   width: fit-content;
 }
 * {
-  background-image: url("/magnum-opus.png");
+  /* background-image: url("/magnum-opus.png");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 body {
   font-family: "Mona Sans";
@@ -46,4 +46,10 @@ h3 {
   display: flex;
   flex-direction: column;
   color: #354a5f;
+}
+.imgs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
