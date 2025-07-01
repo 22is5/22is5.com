@@ -54,3 +54,6 @@ iframe {
   width: 100%;
   aspect-ratio: 16/9;
 }
+img {
+  transform: scale(10);
+}
