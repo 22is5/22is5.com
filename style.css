@@ -7,6 +7,8 @@ a {
 body {
   font-family: "Mona Sans";
   background-color: #efefef;
+  background-size: 32px;
+  background-position: center;
 }
 .parent {
   width: 100%;
@@ -30,8 +32,8 @@ body {
 }
 h1 {
   font-size: 36px;
-  font-weight: 600;
   padding: 0 0 12px 0;
+  font-weight: 600;
 }
 h3 {
   font-size: 24px;

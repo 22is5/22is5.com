@@ -1,11 +1,11 @@
 @import url("https://cdn.22is5.com/css/reset.css");
 @import url("https://cdn.22is5.com/css/colors.css");
-@import url("https://cdn.22is5.com/fonts/mona-sans.css");
+@import url("https://cdn.22is5.com/fonts/minecraft.css");
 a {
   width: fit-content;
 }
 body {
-  font-family: "Mona Sans";
+  font-family: "Minecraft Regular";
   background-color: #efefef;
 }
 .parent {
@@ -29,13 +29,14 @@ body {
   padding: 12px;
 }
 h1 {
+  font-family: "Minecraft Bold";
   font-size: 36px;
-  font-weight: 600;
   padding: 0 0 12px 0;
 }
 h3 {
+  font-family: "Minecraft Bold";
   font-size: 24px;
-  font-weight: 600;
+  padding: 12px 0 0 0;
 }
 .links {
   font-size: 18px;
@@ -54,6 +55,32 @@ iframe {
   width: 100%;
   aspect-ratio: 16/9;
 }
-img {
-  transform: scale(10);
+.factions {
+  position: relative;
+  background-color: #00000010;
+  width: 100%;
+}
+.a {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  transition: 0.2s;
+  z-index: 10;
+}
+.b {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+.factions img {
+  width: 25%;
+}
+b:hover {
+  opacity: 1;
+}
+.a:hover {
+  opacity: 0;
 }
