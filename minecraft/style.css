@@ -75,12 +75,14 @@ iframe {
   justify-content: space-between;
   opacity: 1;
 }
+.factions {
+  border: solid 5px #00000012;
+}
 .factions img {
   width: 25%;
+  padding: 4px;
+  transition: 0.2s;
 }
-b:hover {
-  opacity: 1;
-}
-.a:hover {
+.factions img:hover {
   opacity: 0;
 }
