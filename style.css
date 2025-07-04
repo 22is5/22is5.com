@@ -56,3 +56,30 @@ iframe {
   width: 100%;
   aspect-ratio: 16/9;
 }
+.albums {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border: solid 4px #00000012;
+  background-color: #00000018;
+  align-items: center;
+}
+.album {
+  width: 33%;
+}
+.album img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  transition: 1s;
+}
+.albums a {
+  padding: 0px;
+  /* border: solid 2px #f0f; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.album img:hover {
+  transform: scale(1.2) rotate(1deg);
+}
