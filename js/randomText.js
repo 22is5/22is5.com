@@ -1,13 +1,12 @@
  fetch("/js/text.json")
         .then(response => response.json())
         .then(data => {
-            const messages = data.messages;
-            let randomMessage = "22is5"
+            const text = data.text;
+            let randomMessage = ""
 
-                randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                randomMessage = text[Math.floor(Math.random() * text.length)];
 
             const randomDiv = document.getElementById('random')
             randomDiv.innerHTML = randomMessage;
             document.title = randomMessage;
         })
-        .catch(error => console.error("what the flip", error));
