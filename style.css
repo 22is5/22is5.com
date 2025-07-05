@@ -86,10 +86,15 @@ h2 {
   display:flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .cds a img {
   width:100%;
   aspect-ratio: 1/1;
+  transition: transform 1s;
+}
+.cds a img:hover {
+  transform: scale(1.1) rotate(1deg);
 }
 .info {
   height:100%;
