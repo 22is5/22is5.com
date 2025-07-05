@@ -35,6 +35,11 @@ body {
   border: solid 4px #ffffff12;
   padding:24px
 }
+.title {
+  font-family: "Jetbrains Mono";
+  font-size: 64px;
+  text-align: center;
+}
 h1 {
   font-family: "Jetbrains Mono";
   font-size: 64px;
@@ -123,4 +128,20 @@ h3 {
   padding:56px;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
+}
+.underscore {
+animation-name: underscore;
+animation-duration:1.2s;
+animation-iteration-count: infinite;
+animation-timing-function: step-end;
+animation-delay: 0.5s;
+}
+@keyframes underscore {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
