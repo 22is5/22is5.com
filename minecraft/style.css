@@ -78,19 +78,6 @@ h3 {
   font-family: "Minecraft Bold";
   padding: 12px 0 0 0;
 }
-.banners {
-  display: flex;
-  background-color: #efefef;
-  padding: 12px;
-  gap: 12px;
-}
-.banners img {
-  width: 18%;
-}
-.type {
-  font-family: "Minecraft Italic";
-  opacity: 0.8;
-}
 .footer {
   background-color: #333;
   background-image: url(/img/minecraft/banner.png);
@@ -108,4 +95,51 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 436px;
+}
+br {
+  line-height: 0;
+  font-size: 0px;
+}
+.factions {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faction {
+  background-color: #333;
+  background-image: url(/img/minecraft/banner.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+.faction img {
+  width: 20%;
+  margin: 8px;
+  padding: 4px;
+  border: solid 2px #dedede;
+}
+.factionInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+}
+.factionName {
+  font-family: "Minecraft Header";
+  font-size: 56px;
+  line-height: 1;
+}
+.factionType {
+  font-family: "Minecraft Bold Italic";
+  padding: 0 0 0 6px;
+  opacity: 0.8;
+}
+
+.factionMembers {
+  font-family: "Minecraft Regular";
+  padding: 0 0 0 6px;
+  opacity: 0.8;
 }
