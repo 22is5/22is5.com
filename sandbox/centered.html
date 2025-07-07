@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .page {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+
+      .parent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        background-position: center;
+        background-size: cover;
+        background-color: #0000ff20;
+        border: solid 2px #f00;
+        display: flex;
+        justify-content: center;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #fff #00000000;
+        position: relative;
+      }
+
+      /* When the vertical resolution is higher than the horizontal resolution, it uses this CSS. */
+      @media screen and (orientation: portrait) {
+        .main {
+          width: 100vw;
+          height: 100vw;
+          max-height: 100vw;
+          max-width: 100vh;
+          aspect-ratio: 1/1;
+        }
+        #horizontal {
+          opacity: 0;
+        }
+      }
+
+      /* When the horizontal resolution is higher than the vertical resolution, it uses this CSS. */
+      @media screen and (orientation: landscape) {
+        .main {
+          width: 100vh;
+          height: 100vh;
+          max-height: 100%;
+          max-width: 100vh;
+          aspect-ratio: 1/1;
+        }
+        #vertical {
+          opacity: 0;
+        }
+      }
+
+      p {
+        letter-spacing: 1px;
+      }
+      .detect {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="parent">
+        <div class="main">
+          <p>
+            this square will stay a square<br />
+            no matter how you resize the window<br />
+            <br />
+            if you use <code>position: relative;</code>, on<br />
+            the <code>.main</code> div, you can essentially<br />
+            have a website locked in 1:1<br />
+            <br />
+            read the <a href="https://github.com/2plus2isfive/Experiments/blob/main/centered.html">code</a> if you'd like
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="detect" id="horizontal">horizontal</p>
+    <p class="detect" id="vertical">vertical</p>
+  </body>
+</html>

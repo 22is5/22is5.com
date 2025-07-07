@@ -1,111 +1,144 @@
-@import url(/reset.css);
-@import url("https://cdn.22is5.com/fonts/mona-sans.css");
-@import url("https://cdn.22is5.com/fonts/trajan.css");
-@import url("https://cdn.22is5.com/fonts/times.css");
-@import url("https://cdn.22is5.com/fonts/moms-typewriter.css");
-@import url("https://cdn.22is5.com/fonts/minecraft.css");
+@import url(https://cdn.22is5.com/css/reset.css);
+@import url(https://cdn.22is5.com/fonts/times.css);
+:root {
+  --light: #fff;
+  --dark: #00000030;
+  --bg: #dedede;
+  --borderWidth: 4px;
+}
 body {
+  font-family: "Times";
+  background-color: #121212;
+  padding: 12px;
+}
+.contentWrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
+  gap: 12px;
+}
+.bannerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bannerBar {
+  width: calc(600px + 256px + 12px);
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
   background-color: var(--bg);
   padding: 12px;
-  font-family: "Mona Sans";
-  line-height: 1.6;
+  margin: 0 0 12px 0;
+  display: flex;
+  gap: 12px;
 }
-:root {
-  --bg: #000;
-  --mainbg: #dedede;
+.bannerBar a {
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
+  background-color: var(--bg);
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+#current {
+  border-bottom: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--dark);
+  border-top: solid var(--borderWidth) var(--dark);
 }
 .main {
   width: 600px;
-  background-color: var(--mainbg);
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
+  background-color: var(--bg);
   padding: 12px;
+  line-height: 1.6;
+  height: fit-content;
 }
-embed {
-  width: 100%;
-  background-color: #dedede;
-}
-h1 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  user-select: none;
-}
-h2 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 24px;
-  text-transform: lowercase;
-  letter-spacing: 2px;
-  line-height: 0.9;
-  pointer-events: none;
-  user-select: none;
-}
-h3 {
-  font-weight: 600;
-}
-.links {
+.me {
+  width: 256px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  color: #485363;
-  line-height: 1.2;
+  background-color: var(--bg);
+  gap: 12px;
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
+  height: fit-content;
+  position: sticky;
+  top: 12px;
 }
-.albums {
+.pfp {
   width: 100%;
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
+  filter: grayscale(50%);
+}
+.name {
+  padding: 6px 6px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5.6px;
+}
+.links {
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.album {
-  display: flex;
+.links a {
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  padding: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.album img {
-  width: 72px;
-  height: 72px;
-  transform: scale(1.1);
-  z-index: 100;
+h1 {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 600;
 }
-.albumInfo {
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.main a {
+  text-decoration: underline;
+}
+.gallery {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  line-height: 1;
-  padding: 12px;
-  font-size: 22px;
+  gap: 12px;
+}
+.gallery img {
+  border-top: solid var(--borderWidth) var(--light);
+  border-left: solid var(--borderWidth) var(--light);
+  border-right: solid var(--borderWidth) var(--dark);
+  border-bottom: solid var(--borderWidth) var(--dark);
   width: 100%;
-  backdrop-filter: brightness(50%);
-  text-shadow: 0 0 8px #000;
-  color: #fff;
-}
-#complete {
-  border-right: solid 12px #0f0;
-}
-#incomplete {
-  border-right: solid 12px #ffc400;
-}
-.faction {
-  position: relative;
-  background-color: var(--bg);
-  padding: 12px;
-}
-.faction h6 {
-  color: #fff;
-  font-family: "Minecraft Bold";
-  line-height: 1;
-}
-.faction img {
-  height: 128px;
-}
-.faction p {
-  font-family: "Minecraft Regular";
-  color: #fff;
-}
-
-.faction .type {
-  font-family: "Minecraft Italic";
-  color: #ffffffaa;
+  padding: 6px;
 }
