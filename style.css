@@ -1,6 +1,7 @@
 @import url(https://cdn.22is5.com/css/colors.css);
 @import url(https://cdn.22is5.com/css/reset.css);
 @import url(https://cdn.22is5.com/fonts/vcr.css);
+@import url(https://cdn.22is5.com/fonts/tyler-joseph.css);
 body {
   background-color: #000;
   color: #fff;
@@ -57,5 +58,15 @@ a {
   backdrop-filter: blur(6px);
 }
 a:hover {
-  background-color: #fce30025;
+  background-color: #fce30012;
+}
+.name {
+  border: none;
+  font-family: "Tyler Joseph";
+  text-transform: lowercase;
+  user-select: none;
+  pointer-events: none;
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
