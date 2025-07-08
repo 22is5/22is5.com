@@ -51,22 +51,26 @@ p:hover {
   border-color: var(--bandito);
   text-align: center;
 }
-a {
+.option {
   width: 100%;
   padding: 12px;
   background-color: #00000050;
   backdrop-filter: blur(6px);
+  user-select: none;
 }
-a:hover {
+.option:hover {
   background-color: #fce30012;
 }
 .name {
   border: none;
-  font-family: "Tyler Joseph";
-  text-transform: lowercase;
-  user-select: none;
-  pointer-events: none;
   width: 100%;
   display: flex;
   justify-content: right;
+  cursor: default;
+  user-select: none;
+}
+#name {
+  border: none;
+  font-family: "Tyler Joseph";
+  text-transform: lowercase;
 }

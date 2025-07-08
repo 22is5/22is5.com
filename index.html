@@ -9,12 +9,22 @@
   <body>
     <div class="contentWrapper">
       <div class="content">
-        <p><a href="/cds/">CD Lyric Booklet Recreations</a></p>
-        <p><a href="/minecraft/">Minecraft Server</a></p>
-        <p><a href="/sandbox/">Sandbox</a></p>
-        <p><a href="https://discord.com/invite/F9RPnNjXc5">Discord</a></p>
-        <p class="name">parker</p>
+        <p><a class="option" href="/cds/">CD Lyric Booklet Recreations</a></p>
+        <p><a class="option" href="/minecraft/">Minecraft Server</a></p>
+        <p><a class="option" href="/sandbox/">Sandbox</a></p>
+        <p>
+          <a class="option" href="https://discord.com/invite/F9RPnNjXc5"
+            >Discord</a
+          >
+        </p>
+        <div class="name"><a id="name">Parker</a></div>
       </div>
     </div>
+    <script>
+      const msg = "eastisup";
+      document.getElementById("name").onclick = function () {
+        console.log(msg);
+      };
+    </script>
   </body>
 </html>
