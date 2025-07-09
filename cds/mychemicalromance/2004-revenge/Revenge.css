@@ -1,11 +1,11 @@
-@import url("https://cdn.22is5.com/css/fonts/trajan-pro.css");
+@import url("https://cdn.22is5.com/fonts/trajan.css");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Trajan Regular";
+  font-family: "Trajan";
   background-color: #000;
 }
 .parent {
