@@ -57,6 +57,7 @@ p:hover {
   background-color: #00000050;
   backdrop-filter: blur(6px);
   user-select: none;
+  transition: background-color 0.3s;
 }
 .option:hover {
   background-color: #fce30012;
