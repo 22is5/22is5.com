@@ -2,6 +2,7 @@
 @import url("https://cdn.22is5.com/fonts/minecraft.css");
 :root {
   --sky: #8ebef5;
+  --broken: 45%;
 }
 body {
   image-rendering: pixelated;

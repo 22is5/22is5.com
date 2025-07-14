@@ -23,7 +23,7 @@ function mineDeepslate(block) {
         block.src = "/js/minecraft/destroy_stage_9.png"
     } else if (block.dataset.clicks == '11') {
         block.src = "/img/minecraft/textures/deepslate.png"
-        block.style.filter = "brightness(24%)"
+        block.style.filter = "brightness(var(--broken))"
         let sound = new Audio("/audio/deepslate-break-1.mp3");
                 sound.play();
 
@@ -54,7 +54,7 @@ function mineStone(block) {
         block.src = "/js/minecraft/destroy_stage_9.png"
     } else if (block.dataset.clicks == '11') {
         block.src = "/img/minecraft/textures/stone.png"
-        block.style.filter = "brightness(24%)"
+        block.style.filter = "brightness(var(--broken))"
         let sound = new Audio("/audio/stone-break.ogg");
                 sound.play();
 
