@@ -154,3 +154,18 @@ a {
 code {
   font-family: "Minecraft Mono";
 }
+.disclaimer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: #00000050;
+  background-image: url("/img/minecraft/textures/black-glass.png");
+  background-size: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-family: "Minecraft Bold";
+}
