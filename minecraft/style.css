@@ -162,6 +162,7 @@ code {
   background-color: #00000050;
   background-image: url("/img/minecraft/textures/black-glass.png");
   background-size: 64px;
+  background-position: center;
   height: 64px;
   display: flex;
   justify-content: center;
