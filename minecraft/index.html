@@ -10,15 +10,9 @@
     <div class="contentWrapper">
       <div class="content">
         <h1>22is5 Minecraft Server</h1>
-        <h2>Information</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi
-          dolore cupiditate facere, veniam cumque sint necessitatibus,
-          consectetur explicabo eaque maxime reiciendis quam ut. Nulla aut
-          veniam nam cumque, quo at rerum corrupti illum obcaecati, est non
-          fugiat perspiciatis tempora aliquam magnam adipisci iste neque optio!
-          Magnam velit unde distinctio.
-        </p>
+        <h2>Rules</h2>
+        <p><code>01.</code> Don't Grief</p>
+        <p><code>01.</code> Don't Steal</p>
         <h2>Header 2 Test</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
@@ -60,21 +54,21 @@
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky"></div>
@@ -96,21 +90,21 @@
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="oak-log">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky"></div>
@@ -131,35 +125,35 @@
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="oak-log">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky"></div>
@@ -179,35 +173,35 @@
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="oak-log">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="azalea-leaves">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky">
           <img
             class="over"
             src="/img/minecraft/textures/azalea-leaves.png"
-            alt=""
+            draggable="false"
           />
         </div>
         <div class="sky"></div>
@@ -437,8 +431,24 @@
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
-        <div class="iron-stone"></div>
-        <div class="iron-stone"></div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
@@ -454,7 +464,15 @@
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
-        <div class="iron-stone"></div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
@@ -485,9 +503,33 @@
         <div class="stone"></div>
       </div>
       <div class="layer">
-        <div class="coal-stone"></div>
-        <div class="coal-stone"></div>
-        <div class="coal-stone"></div>
+        <div class="coal-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
+        <div class="coal-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
+        <div class="coal-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
@@ -503,8 +545,24 @@
         <div class="granite"></div>
       </div>
       <div class="layer">
-        <div class="coal-stone"></div>
-        <div class="coal-stone"></div>
+        <div class="coal-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
+        <div class="coal-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
@@ -589,8 +647,24 @@
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
-        <div class="iron-stone"></div>
-        <div class="iron-stone"></div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
       </div>
       <div class="layer">
         <div class="stone"></div>
@@ -606,9 +680,25 @@
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
-        <div class="iron-stone"></div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
-        <div class="iron-stone"></div>
+        <div class="iron-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
       </div>
       <div class="layer">
         <div class="stone"></div>
@@ -684,7 +774,15 @@
       </div>
       <div class="layer">
         <div class="stone"></div>
-        <div class="emerald-stone"></div>
+        <div class="emerald-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="stone"></div>
@@ -739,7 +837,15 @@
       <div class="layer">
         <div class="stone"></div>
         <div class="stone"></div>
-        <div class="coal-stone"></div>
+        <div class="coal-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="deepslate"></div>
         <div class="stone"></div>
@@ -758,7 +864,15 @@
         <div class="deepslate"></div>
         <div class="stone"></div>
         <div class="stone"></div>
-        <div class="coal-deepslate"></div>
+        <div class="coal-deepslate" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineDeepslate(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="deepslate"></div>
@@ -766,8 +880,24 @@
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="deepslate"></div>
-        <div class="gold-deepslate"></div>
-        <div class="gold-stone"></div>
+        <div class="gold-deepslate" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineDeepslate(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
+        <div class="gold-stone" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineStone(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="stone"></div>
         <div class="stone"></div>
         <div class="deepslate"></div>
@@ -785,7 +915,15 @@
         <div class="deepslate"></div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
-        <div class="gold-deepslate"></div>
+        <div class="gold-deepslate" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineDeepslate(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
@@ -802,7 +940,15 @@
         <div class="deepslate"></div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
-        <div class="gold-deepslate"></div>
+        <div class="gold-deepslate" id="mineable">
+          <img
+            src=""
+            class="destroy"
+            onclick="mineDeepslate(this)"
+            data-clicks="0"
+            draggable="false"
+          />
+        </div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
@@ -923,21 +1069,19 @@
           <img
             src=""
             class="destroy"
-            onclick="mineThing(this)"
+            onclick="mineDeepslate(this)"
             data-clicks="0"
             draggable="false"
           />
-          <audio id="mineSound" src="/audio/deepslate-break-1.mp3"></audio>
         </div>
         <div class="diamond-deepslate" id="mineable">
           <img
             src=""
             class="destroy"
-            onclick="mineThing(this)"
+            onclick="mineDeepslate(this)"
             data-clicks="0"
             draggable="false"
           />
-          <audio id="mineSound" src="/audio/deepslate-break-1.mp3"></audio>
         </div>
         <div class="deepslate"></div>
         <div class="deepslate"></div>
