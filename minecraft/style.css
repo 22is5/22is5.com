@@ -168,4 +168,6 @@ code {
   align-items: center;
   font-size: 36px;
   font-family: "Minecraft Bold";
+  z-index: 100;
+  pointer-events: none;
 }
