@@ -46,7 +46,7 @@ h2 {
 }
 .layer {
   width: 100%;
-  background-color: #000;
+  background-color: var(--sky);
   display: flex;
   justify-content: space-between;
 }
@@ -71,6 +71,12 @@ h2 {
 .stone {
   background-image: url("/img/minecraft/textures/stone.png");
 }
+.granite {
+  background-image: url("/img/minecraft/textures/granite.png");
+}
+.diorite {
+  background-image: url("/img/minecraft/textures/diorite.png");
+}
 .deepslate {
   background-image: url("/img/minecraft/textures/deepslate.png");
 }
@@ -80,16 +86,53 @@ h2 {
 .coal-deepslate {
   background-image: url("/img/minecraft/textures/coal-deepslate.png");
 }
+.iron-stone {
+  background-image: url("/img/minecraft/textures/iron-stone.png");
+}
+.emerald-stone {
+  background-image: url("/img/minecraft/textures/emerald-stone.png");
+}
+.gold-deepslate {
+  background-image: url("/img/minecraft/textures/gold-deepslate.png");
+}
+.gold-stone {
+  background-image: url("/img/minecraft/textures/gold-stone.png");
+}
 .diamond-deepslate {
   background-image: url("/img/minecraft/textures/diamond-deepslate.png");
+}
+.bedrock {
+  background-image: url("/img/minecraft/textures/bedrock.png");
+}
+.netherrack {
+  background-image: url("/img/minecraft/textures/netherrack.png");
+}
+.unknown {
+  background-image: url("/img/minecraft/textures/unknown.png");
+}
+.oak-log {
+  background-image: url("/img/minecraft/textures/oak-log.png");
+}
+.azalea-leaves {
+  background-image: url("/img/minecraft/textures/azalea-leaves.png");
+}
+.azalea-leaves-flowered {
+  background-image: url("/img/minecraft/textures/azalea-leaves-flowered.png");
+}
+.dirt-rooted {
+  background-image: url("/img/minecraft/textures/dirt-rooted.png");
 }
 .destroy {
   width: 100%;
   height: 100%;
-  filter: brightness(24%);
+  filter: brightness(50%);
   z-index: 100;
   opacity: 0;
 }
 audio {
   display: none;
+}
+.over {
+  width: 100%;
+  height: 100%;
 }

@@ -28,6 +28,6 @@ function mineThing(block) {
                 sound.play();
         setTimeout(() => {
         window.location.href = "https://example.com" },
-        50);
+        250);
 
 }}
