@@ -1,77 +1,78 @@
 @import url(https://cdn.22is5.com/css/colors.css);
 @import url(https://cdn.22is5.com/css/reset.css);
-@import url(https://cdn.22is5.com/fonts/vcr.css);
+@import url(https://cdn.22is5.com/fonts/source-serif.css);
 @import url(https://cdn.22is5.com/fonts/tyler-joseph.css);
+@import url(https://cdn.22is5.com/fonts/libertinus.css);
+
 body {
   background-color: #000;
   color: #fff;
-  font-family: "VCR";
-  background-image: url(https://github.com/22is5/cdn/blob/main/img/artists/twentyonepilots/trench/blackbird.jpg?raw=true);
-  background-size: cover;
-  background-position: center;
-  height: fit-content;
-  min-height: 100vh;
-}
-.contentWrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 12px;
+  font-family: "Source Serif";
+  user-select: none;
+}
+.bannerWrapper {
+  background-image: url("https://github.com/22is5/cdn/blob/main/img/artists/twentyonepilots/assets/trench/flower_bg.jpg?raw=true");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  aspect-ratio: 8/3;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: fit-content;
-  min-height: 100vh;
+  background-color: #080808;
+}
+.name {
+  width: 100%;
+  height: 100%;
+  font-size: 64px;
+  font-weight: 600;
+  backdrop-filter: blur(2px) brightness(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libertinus Mono";
+  border: solid 2px #121212;
 }
 .content {
-  max-width: 100%;
-  line-height: 1.3;
-  text-align: justify;
-  font-size: 32px;
-  text-transform: uppercase;
+  padding: 12px;
+  width: 640px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-h1 {
-  font-size: 16px;
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.links a {
+  width: 100%;
+  background-color: #080808;
+  border: solid 2px #121212;
+  padding: 18px;
   text-align: center;
   text-transform: uppercase;
-}
-h2 {
   font-size: 24px;
-  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
 }
-p {
-  color: #fff;
-  border: solid 3px #fff;
-  text-align: center;
-  display: flex;
+.links a:hover {
+  border-color: #181818;
 }
-p:hover {
-  color: var(--bandito);
-  border-color: var(--bandito);
-  text-align: center;
-}
-.option {
-  width: 100%;
-  padding: 12px;
-  background-color: #00000050;
-  backdrop-filter: blur(6px);
-  user-select: none;
-  transition: background-color 0.3s;
-}
-.option:hover {
-  background-color: #fce30012;
-}
-.name {
-  border: none;
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  cursor: default;
-  user-select: none;
-}
-#name {
-  border: none;
+.me {
   font-family: "Tyler Joseph";
-  text-transform: lowercase;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 32px;
+  padding: 12px;
+  user-select: none;
+  pointer-events: none;
+  z-index: -1;
 }
