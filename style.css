@@ -13,7 +13,7 @@ body {
   user-select: none;
 }
 .bannerWrapper {
-  background-image: url("https://github.com/22is5/cdn/blob/main/img/artists/twentyonepilots/assets/trench/flower_bg.jpg?raw=true");
+  background-image: url("https://cdn.22is5.com/img/artists/twentyonepilots/assets/trench/flower_bg.jpg");
   background-size: cover;
   background-position: top;
   width: 100%;
