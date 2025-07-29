@@ -4,14 +4,23 @@
 @import url(https://cdn.22is5.com/fonts/tyler-joseph.css);
 @import url(https://cdn.22is5.com/fonts/libertinus.css);
 
+:root {
+  --bgc: #000;
+  --button: #080808;
+  --outline: #121212;
+  --hover: #242424;
+  --radius: 12px;
+}
+
 body {
-  background-color: #000;
+  background-color: var(--bgc);
   color: #fff;
   display: flex;
   justify-content: center;
   font-family: "Source Serif";
   user-select: none;
 }
+
 .bannerWrapper {
   background-image: url("https://cdn.22is5.com/img/artists/twentyonepilots/assets/trench/flower_bg.jpg");
   background-size: cover;
@@ -21,8 +30,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #080808;
+  background-color: var(--button);
+  border-radius: var(--radius);
 }
+
 .name {
   width: 100%;
   height: 100%;
@@ -33,8 +44,10 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Libertinus Mono";
-  border: solid 2px #121212;
+  border: solid 2px var(--outline);
+  border-radius: var(--radius);
 }
+
 .content {
   padding: 12px;
   width: 640px;
@@ -42,26 +55,31 @@ body {
   flex-direction: column;
   gap: 12px;
 }
+
 .links {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .links a {
   width: 100%;
-  background-color: #080808;
-  border: solid 2px #121212;
+  background-color: var(--button);
+  border: solid 2px var(--outline);
   padding: 18px;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   letter-spacing: 4px;
   font-weight: 300;
+  border-radius: var(--radius);
 }
+
 .links a:hover {
-  border-color: #181818;
+  border-color: var(--hover);
 }
+
 .me {
   font-family: "Tyler Joseph";
   position: fixed;
