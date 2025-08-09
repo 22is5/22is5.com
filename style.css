@@ -4,6 +4,12 @@
 @import url(https://cdn.22is5.com/fonts/tyler-joseph.css);
 @import url(https://cdn.22is5.com/fonts/libertinus.css);
 
+* {
+  background-image: url("https://gaper.bingzoid.com/bingzoid-hd.png");
+  background-position: center;
+  background-size: cover;
+}
+
 :root {
   --bgc: #000;
   --button: #080808;
