@@ -1,0 +1,9 @@
+@import url("https://cdn.22is5.com/css/reset.css");
+@import url("https://cdn.22is5.com/fonts/minecraft.css");
+@import url("https://cdn.22is5.com/css/base.css");
+
+:root {
+    --content-font: "Minecraft Regular";
+    --header-font: "Minecraft Bold";
+    --code-font: "Minecraft Mono";
+}
