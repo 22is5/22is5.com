@@ -6,4 +6,30 @@
     --content-font: "Minecraft Regular";
     --header-font: "Minecraft Bold";
     --code-font: "Minecraft Mono";
+    --content-radius: 0px;
+}
+
+.factions {
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+}
+
+.faction {
+    display: flex;
+}
+
+.faction__banner {
+    width: 25%;
+}
+
+.faction__info {
+    padding: 0 12px;
+}
+
+.faction__title {
+    font-family: "Minecraft Bold";
+    font-size: 32px;
 }
