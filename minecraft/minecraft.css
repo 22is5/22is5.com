@@ -150,7 +150,7 @@ body {
 
 .bg {
   position: fixed;
-  background-image: url("textures/block/stone_bricks.png");
+  background-image: url("textures/block/deepslate_bricks.png");
   background-position: center;
   background-size: 128px;
   image-rendering: pixelated;
