@@ -43,6 +43,27 @@ document.addEventListener("DOMContentLoaded", () => {
 // DISCORD button
 
 // FACTIONS
+document.addEventListener("mousemove", (event) => {
+  const followerDiv = document.getElementById("dema-tooltip");
+  followerDiv.style.left = event.clientX + "px";
+  followerDiv.style.top = event.clientY + "px";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bureauElements = document.querySelectorAll(".dema");
+  const tooltip = document.getElementById("dema-tooltip");
+
+  bureauElements.forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      tooltip.style.display = "block";
+    });
+
+    element.addEventListener("mouseleave", () => {
+      tooltip.style.display = "none";
+    });
+  });
+});
+// dema faction
 
 document.addEventListener("mousemove", (event) => {
   const followerDiv = document.getElementById("bumps-tooltip");

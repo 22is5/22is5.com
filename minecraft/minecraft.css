@@ -91,6 +91,15 @@ body {
 .gold {
   color: var(--mc-gold);
 }
+.yellow {
+  color: var(--mc-yellow);
+}
+.green {
+  color: var(--mc-green);
+}
+.dark_green {
+  color: var(--mc-dark_green);
+}
 .aqua {
   color: var(--mc-aqua);
 }
@@ -113,6 +122,9 @@ body {
   display: none;
 }
 #bumps-tooltip {
+  display: none;
+}
+#dema-tooltip {
   display: none;
 }
 #information-tooltip {
