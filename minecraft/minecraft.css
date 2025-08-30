@@ -24,6 +24,7 @@ body {
   display: flex;
   user-select: none;
   gap: 16px;
+  filter: drop-shadow(0 0 6px #000);
 }
 
 .banner {
@@ -149,7 +150,7 @@ body {
 
 .bg {
   position: fixed;
-  background-image: url("textures/block/dirt.png");
+  background-image: url("textures/block/stone_bricks.png");
   background-position: center;
   background-size: 128px;
   image-rendering: pixelated;
