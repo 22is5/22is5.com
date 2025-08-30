@@ -169,6 +169,7 @@ body {
 .title {
   width: 640px;
   margin-bottom: 42px;
+  user-select: none;
 }
 .button {
   user-select: none;
