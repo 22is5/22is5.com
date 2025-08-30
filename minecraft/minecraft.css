@@ -1,35 +1,98 @@
 @import url("https://cdn.22is5.com/css/reset.css");
 @import url("https://cdn.22is5.com/fonts/minecraft.css");
 @import url("https://cdn.22is5.com/css/base.css");
+@import url("https://cdn.22is5.com/css/colors.css");
 
 :root {
-    --content-font: "Minecraft Regular";
-    --header-font: "Minecraft Bold";
-    --code-font: "Minecraft Mono";
-    --content-radius: 0px;
+  --content-font: "Minecraft Regular";
+  --header-font: "Minecraft Bold";
+  --code-font: "Minecraft Mono";
+  --content-radius: 0px;
+}
+
+.content {
+  clip-path: polygon(
+    0px calc(100% - 0px),
+    6px calc(100% - 0px),
+    6px 100%,
+    calc(100% - 0px) 100%,
+    calc(100% - 0px) calc(100% - 6px),
+    100% calc(100% - 6px),
+    100% 6px,
+    calc(100% - 6px) 6px,
+    calc(100% - 6px) 0px,
+    6px 0px,
+    6px 6px,
+    0px 6px
+  );
 }
 
 .factions {
-    width: 100%;
-    display: flex;
-    background-color: #000;
-    color: #fff;
-    padding: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* overflow-x: scroll; */
+  border: solid 6px #dedede;
+  padding: 6px;
+  gap: 12px;
 }
 
-.faction {
-    display: flex;
+.banner {
+  width: 25%;
 }
 
-.faction__banner {
-    width: 25%;
+.faction-tooltip {
+  pointer-events: none;
+  background-color: #110110ee;
+  padding: 6px;
+  font-size: 24px;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  font-family: "Minecraft Regular";
+  position: absolute;
+  clip-path: polygon(
+    0px calc(100% - 6px),
+    6px calc(100% - 6px),
+    6px 100%,
+    calc(100% - 6px) 100%,
+    calc(100% - 6px) calc(100% - 6px),
+    100% calc(100% - 6px),
+    100% 6px,
+    calc(100% - 6px) 6px,
+    calc(100% - 6px) 0px,
+    6px 0px,
+    6px 6px,
+    0px 6px
+  );
+}
+.faction-info {
+  border: solid 4px #2b0860ee;
+  padding: 6px;
+}
+.faction-title {
+  margin: 0 0 6px 0;
+}
+.faction-type {
+  color: #fff;
+  font-family: "Minecraft Italic";
+}
+.faction-members {
+  color: var(--mc-gray);
+}
+.uncommon {
+  color: var(--uncommon);
+}
+.rare {
+  color: var(--rare);
 }
 
-.faction__info {
-    padding: 0 12px;
+#bureau-tooltip {
+  display: none;
 }
-
-.faction__title {
-    font-family: "Minecraft Bold";
-    font-size: 32px;
+#trench-tooltip {
+  display: none;
+}
+#populist-tooltip {
+  display: none;
 }
