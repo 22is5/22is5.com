@@ -237,9 +237,16 @@ body {
 }
 
 .information {
+  position: relative;
   color: var(--mc-gray);
   background-image: url("textures/gui/sprites/widget/button_disabled.png");
 }
 .information:hover {
   background-image: url("textures/gui/sprites/widget/button_disabled.png");
+}
+
+.info-ico {
+  position: absolute;
+  left: 12px;
+  filter: brightness(64%);
 }
