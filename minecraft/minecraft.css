@@ -27,7 +27,7 @@ body {
   height: 128px;
 }
 
-.faction-tooltip {
+.tooltip {
   user-select: none;
   position: fixed;
   pointer-events: none;
@@ -53,25 +53,43 @@ body {
     0px 6px
   );
 }
-.faction-info {
+.tooltip-info {
   border: solid 4px #2b0860ee;
   user-select: none;
   padding: 6px;
 }
-.faction-title {
+.tooltip-title {
   margin: 0 0 6px 0;
 }
-.faction-type {
-  color: #fff;
-}
-.faction-members {
-  color: var(--mc-gray);
+.tooltip-br {
+  height: 12px;
 }
 .uncommon {
   color: var(--uncommon);
 }
 .rare {
   color: var(--rare);
+}
+.bold {
+  font-family: "Minecraft Bold";
+}
+.mono {
+  font-family: "Minecraft Mono";
+}
+.rare {
+  color: var(--rare);
+}
+.gold {
+  color: var(--mc-gold);
+}
+.aqua {
+  color: var(--mc-aqua);
+}
+.blurple {
+  color: var(--blurple);
+}
+.gray {
+  color: var(--mc-gray);
 }
 #bureau-tooltip {
   display: none;
@@ -80,6 +98,12 @@ body {
   display: none;
 }
 #populist-tooltip {
+  display: none;
+}
+#information-tooltip {
+  display: none;
+}
+#discord-tooltip {
   display: none;
 }
 
@@ -138,7 +162,8 @@ body {
   margin-bottom: 42px;
 }
 .button {
-  width: 512px;
+  user-select: none;
+  width: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,6 +171,7 @@ body {
   background-position: center;
   background-size: cover;
   aspect-ratio: 10/1;
+  image-rendering: pixelated;
 }
 
 .button:hover {
@@ -174,4 +200,8 @@ body {
   width: 48px;
   aspect-ratio: 1/1;
   image-rendering: pixelated;
+}
+
+.spacer {
+  height: 64px;
 }

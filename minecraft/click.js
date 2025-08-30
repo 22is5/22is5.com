@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      audio.play().catch((error) => {
-        console.error("Error playing sound:", error);
-      });
+      audio.play().catch((error) => {});
+      audio.volume = 0.05;
     });
   });
 });

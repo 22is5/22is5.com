@@ -42,14 +42,41 @@
         <div class="faction-members">Sixteenthes, Teekle</div>
       </div>
     </div>
+    <div class="tooltip" id="information-tooltip">
+      <div class="tooltip-info">
+        <div class="tooltip-title bold">Information</div>
+        <div class="tooltip-line gold mono">mc.22is5.com</div>
+        <div class="tooltip-line">Vanilla 1.21.8</div>
+        <div class="tooltip-br"></div>
+        <div class="tooltip-line aqua">Bedrock Support!</div>
+        <div class="tooltip-line">Port: i forgot</div>
+      </div>
+    </div>
+    <div class="tooltip" id="discord-tooltip">
+      <div class="tooltip-info">
+        <div class="tooltip-title bold">Discord</div>
+        <div class="tooltip-line blurple">Click to join!</div>
+      </div>
+    </div>
     <!-- /special -->
 
     <!-- actual content -->
     <div class="wrap">
       <div class="content">
         <img src="textures/gui/title/minecraft.png" class="title" />
-        <a href="" class="button">
+        <a class="button information">
           <div class="button__text">Information</div>
+        </a>
+        <a
+          href="https://22is5.com/@/discord"
+          target="_blank"
+          class="button discord"
+        >
+          <div class="button__text">Discord</div>
+        </a>
+        <div class="spacer"></div>
+        <a href="../" class="button">
+          <div class="button__text">Back to Home</div>
         </a>
         <!-- <div class="factions">
           <img
@@ -99,5 +126,6 @@
     </script>
     <script src="click.js"></script>
     <script src="bgm.js"></script>
+    <script src="tooltips.js"></script>
   </body>
 </html>
