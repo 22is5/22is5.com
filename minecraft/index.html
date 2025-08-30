@@ -15,6 +15,12 @@
   </head>
 
   <body>
+    <audio src="" class="bgm" autoplay></audio>
+    <div class="bg"></div>
+    <div class="bg2"></div>
+    <!-- special -->
+    <img src="textures/item/iron_sword.png" id="cursor" draggable="false" />
+    <img src="textures/misc/pumpkinblur.png" id="pumpkin" draggable="false" />
     <div class="faction-tooltip" id="bureau-tooltip">
       <div class="faction-info">
         <div class="faction-title rare">The Bureau</div>
@@ -36,116 +42,62 @@
         <div class="faction-members">Sixteenthes, Teekle</div>
       </div>
     </div>
+    <!-- /special -->
+
+    <!-- actual content -->
     <div class="wrap">
-      <div class="title">22is5 Minecraft Server</div>
       <div class="content">
-        <h2>Rules</h2>
-        <ul>
-          <li>Don't grief.</li>
-          <li>Don't steal.</li>
-          <li>Don't cheat.</li>
-        </ul>
-        <p class="sub">Everything is handled on a case by case basis.</p>
-
-        <div class="spacer"></div>
-
-        <h2>Info</h2>
-        <p><code>1.21.8</code></p>
-        <p><code>mc.22is5.com</code></p>
-        <p><a href="https://22is5.com/@/discord">Discord Server</a></p>
-
-        <div class="spacer"></div>
-
-        <h2>Factions</h2>
-        <p>
-          There are a number of factions on the server. You can create your own
-          by just asking in the
-          <a href="https://22is5.com/@/discord">Discord server</a>.
-        </p>
-        <div class="factions">
+        <img src="textures/gui/title/minecraft.png" class="title" />
+        <a href="" class="button">
+          <div class="button__text">Information</div>
+        </a>
+        <!-- <div class="factions">
           <img
             src="factions/bureau.png"
             alt="The Bureau"
             class="banner bureau"
+            draggable="false"
           />
-          <img src="factions/trench.png" alt="Trench" class="banner trench" />
+          <img
+            src="factions/trench.png"
+            alt="Trench"
+            class="banner trench"
+            draggable="false"
+          />
           <img
             src="factions/populist.png"
             alt="populist"
             class="banner populist"
+            draggable="false"
           />
-        </div>
-      </div>
-      <div class="footer">
-        <div class="copy">2025, 22is5</div>
+        </div> -->
       </div>
     </div>
+    <div class="music">
+      <div class="music__text">Music?</div>
+      <div class="music__checkbox"></div>
+    </div>
+    <script src="pumpkin.js"></script>
+    <script src="factions.js"></script>
     <script>
       document.addEventListener("mousemove", (event) => {
-        const followerDiv = document.getElementById("bureau-tooltip");
+        const followerDiv = document.getElementById("cursor");
         followerDiv.style.left = event.clientX + "px";
         followerDiv.style.top = event.clientY + "px";
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const bureauElements = document.querySelectorAll(".bureau");
-        const tooltip = document.getElementById("bureau-tooltip");
+      // minceraft
+      const titleImage = document.querySelector("img.title");
 
-        bureauElements.forEach((element) => {
-          element.addEventListener("mouseenter", () => {
-            tooltip.style.display = "block";
-          });
+      const random = Math.floor(Math.random() * 100) + 1;
 
-          element.addEventListener("mouseleave", () => {
-            tooltip.style.display = "none";
-          });
-        });
-      });
-      //BUREAU
-
-      document.addEventListener("mousemove", (event) => {
-        const followerDiv = document.getElementById("trench-tooltip");
-        followerDiv.style.left = event.clientX + "px";
-        followerDiv.style.top = event.clientY + "px";
-      });
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const bureauElements = document.querySelectorAll(".trench");
-        const tooltip = document.getElementById("trench-tooltip");
-
-        bureauElements.forEach((element) => {
-          element.addEventListener("mouseenter", () => {
-            tooltip.style.display = "block";
-          });
-
-          element.addEventListener("mouseleave", () => {
-            tooltip.style.display = "none";
-          });
-        });
-      });
-      //TRENCH
-
-      document.addEventListener("mousemove", (event) => {
-        const followerDiv = document.getElementById("populist-tooltip");
-        followerDiv.style.left = event.clientX + "px";
-        followerDiv.style.top = event.clientY + "px";
-      });
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const bureauElements = document.querySelectorAll(".populist");
-        const tooltip = document.getElementById("populist-tooltip");
-
-        bureauElements.forEach((element) => {
-          element.addEventListener("mouseenter", () => {
-            tooltip.style.display = "block";
-          });
-
-          element.addEventListener("mouseleave", () => {
-            tooltip.style.display = "none";
-          });
-        });
-      });
-      //POPULIST
+      if (random === 64) {
+        titleImage.src = "textures/gui/title/minceraft.png";
+      } else {
+        titleImage.src = "textures/gui/title/minecraft.png";
+      }
     </script>
+    <script src="click.js"></script>
+    <script src="bgm.js"></script>
   </body>
 </html>
