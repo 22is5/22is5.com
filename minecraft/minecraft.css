@@ -209,7 +209,7 @@ body {
 }
 
 .button__text {
-  filter: drop-shadow(3px 3px 0 var(--mc-dark_gray));
+  filter: drop-shadow(2px 2px 0 var(--mc-dark_gray));
 }
 
 .music {
@@ -234,4 +234,12 @@ body {
 
 .spacer {
   height: 64px;
+}
+
+.information {
+  color: var(--mc-gray);
+  background-image: url("textures/gui/sprites/widget/button_disabled.png");
+}
+.information:hover {
+  background-image: url("textures/gui/sprites/widget/button_disabled.png");
 }
