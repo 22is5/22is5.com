@@ -7,6 +7,7 @@
   --header-font: "Minecraft Bold";
   --code-font: "Minecraft Mono";
   --content-radius: 0px;
+  --menu-width: 480px;
 }
 
 body {
@@ -19,8 +20,10 @@ body {
 }
 
 .factions {
+  width: var(--menu-width);
   display: flex;
   user-select: none;
+  gap: 16px;
 }
 
 .banner {
@@ -73,11 +76,17 @@ body {
 .bold {
   font-family: "Minecraft Bold";
 }
+.italic {
+  font-family: "Minecraft Italic";
+}
 .mono {
   font-family: "Minecraft Mono";
 }
 .rare {
   color: var(--rare);
+}
+.red {
+  color: var(--mc-red);
 }
 .gold {
   color: var(--mc-gold);
@@ -163,7 +172,7 @@ body {
 }
 .button {
   user-select: none;
-  width: 480px;
+  width: var(--menu-width);
   display: flex;
   justify-content: center;
   align-items: center;
