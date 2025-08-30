@@ -31,6 +31,7 @@ body {
 }
 
 .tooltip {
+  transform: translate(18px, -36px);
   user-select: none;
   position: fixed;
   pointer-events: none;
