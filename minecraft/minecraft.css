@@ -27,7 +27,7 @@ body {
 }
 
 .banner {
-  height: 128px;
+  width: 72px;
 }
 
 .tooltip {
@@ -57,7 +57,7 @@ body {
   );
 }
 .tooltip-info {
-  border: solid 4px #2b0860ee;
+  border: solid 4px #2b0860dd;
   user-select: none;
   padding: 6px;
 }
@@ -94,6 +94,9 @@ body {
 .aqua {
   color: var(--mc-aqua);
 }
+.blue {
+  color: var(--mc-blue);
+}
 .blurple {
   color: var(--blurple);
 }
@@ -107,6 +110,9 @@ body {
   display: none;
 }
 #populist-tooltip {
+  display: none;
+}
+#bumps-tooltip {
   display: none;
 }
 #information-tooltip {

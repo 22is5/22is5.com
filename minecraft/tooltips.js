@@ -43,6 +43,29 @@ document.addEventListener("DOMContentLoaded", () => {
 // DISCORD button
 
 // FACTIONS
+
+document.addEventListener("mousemove", (event) => {
+  const followerDiv = document.getElementById("bumps-tooltip");
+  followerDiv.style.left = event.clientX + "px";
+  followerDiv.style.top = event.clientY + "px";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bureauElements = document.querySelectorAll(".bumps");
+  const tooltip = document.getElementById("bumps-tooltip");
+
+  bureauElements.forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      tooltip.style.display = "block";
+    });
+
+    element.addEventListener("mouseleave", () => {
+      tooltip.style.display = "none";
+    });
+  });
+});
+// bumps faction
+
 document.addEventListener("mousemove", (event) => {
   const followerDiv = document.getElementById("populist-tooltip");
   followerDiv.style.left = event.clientX + "px";
@@ -85,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-// populist faction
+// trench faction
 
 document.addEventListener("mousemove", (event) => {
   const followerDiv = document.getElementById("bureau-tooltip");
@@ -107,4 +130,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-// populist faction
+// bureau faction
