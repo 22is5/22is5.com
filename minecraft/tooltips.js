@@ -44,6 +44,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // FACTIONS
 document.addEventListener("mousemove", (event) => {
+  const followerDiv = document.getElementById("seals-tooltip");
+  followerDiv.style.left = event.clientX + "px";
+  followerDiv.style.top = event.clientY + "px";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bureauElements = document.querySelectorAll(".seals");
+  const tooltip = document.getElementById("seals-tooltip");
+
+  bureauElements.forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      tooltip.style.display = "block";
+    });
+
+    element.addEventListener("mouseleave", () => {
+      tooltip.style.display = "none";
+    });
+  });
+});
+// dema faction
+
+document.addEventListener("mousemove", (event) => {
   const followerDiv = document.getElementById("dema-tooltip");
   followerDiv.style.left = event.clientX + "px";
   followerDiv.style.top = event.clientY + "px";

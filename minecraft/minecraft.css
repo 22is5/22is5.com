@@ -25,10 +25,12 @@ body {
   user-select: none;
   gap: 16px;
   filter: drop-shadow(0 0 6px #000);
+  /* overflow-x: scroll; */
+  padding: 0 0 6px 0;
 }
 
 .banner {
-  width: 72px;
+  width: 100%;
 }
 
 .tooltip {
@@ -127,6 +129,9 @@ body {
   display: none;
 }
 #dema-tooltip {
+  display: none;
+}
+#seals-tooltip {
   display: none;
 }
 #information-tooltip {
