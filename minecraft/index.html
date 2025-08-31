@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <audio src="" class="bgm" autoplay></audio>
+    <!-- <audio src="" class="bgm" autoplay></audio> -->
     <div class="bg"></div>
     <div class="bg2"></div>
     <!-- special -->
@@ -119,7 +119,7 @@
         <a class="button information">
           <img
             src="textures/gui/sprites/icon/info.png"
-            class="info-ico"
+            class="ico"
             draggable="false"
           />
           <div class="button__text">Information</div>
@@ -129,6 +129,12 @@
           target="_blank"
           class="button discord"
         >
+          <img
+            src="textures/gui/sprites/toast/social_interactions.png"
+            class="ico"
+            draggable="false"
+            style="filter: brightness(100%); transform: scale(1.5)"
+          />
           <div class="button__text">Discord</div>
         </a>
         <div class="factions">
@@ -175,10 +181,10 @@
         </a>
       </div>
     </div>
-    <div class="music">
+    <!-- <div class="music">
       <div class="music__text">Music?</div>
       <div class="music__checkbox"></div>
-    </div>
+    </div> -->
     <script src="pumpkin.js"></script>
     <script src="factions.js"></script>
     <script>
@@ -200,7 +206,7 @@
       }
     </script>
     <script src="click.js"></script>
-    <script src="bgm.js"></script>
+    <!-- <script src="bgm.js"></script> -->
     <script src="tooltips.js"></script>
   </body>
 </html>

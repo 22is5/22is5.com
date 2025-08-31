@@ -154,7 +154,7 @@ body {
 
 .bg {
   position: fixed;
-  background-image: url("textures/block/deepslate_bricks.png");
+  background-image: url("textures/block/deepslate_tiles.png");
   background-position: center;
   background-size: 128px;
   image-rendering: pixelated;
@@ -206,6 +206,7 @@ body {
   background-size: cover;
   aspect-ratio: 10/1;
   image-rendering: pixelated;
+  position: relative;
 }
 
 .button:hover {
@@ -241,7 +242,6 @@ body {
 }
 
 .information {
-  position: relative;
   color: var(--mc-gray);
   background-image: url("textures/gui/sprites/widget/button_disabled.png");
 }
@@ -249,7 +249,7 @@ body {
   background-image: url("textures/gui/sprites/widget/button_disabled.png");
 }
 
-.info-ico {
+.ico {
   position: absolute;
   left: 14px;
   filter: brightness(64%);
