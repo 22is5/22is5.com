@@ -1,35 +1,47 @@
 @import url("https://cdn.22is5.com/css/reset.css");
-@import url("https://cdn.22is5.com/fonts/smash.css");
+@import url("https://cdn.22is5.com/fonts/minecraft.css");
+@import url("https://cdn.22is5.com/css/colors.css");
 
 html,
 body {
-    font-size: 24px;
-    font-family: "Smash";
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #000;
+  font-family: "Minecraft Regular";
 }
 
-.back {
-    width: 640px;
-    padding: 8px;
-    font-size: 22px;
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-color: #080808;
-    min-width: 640px;
-    max-width: 640px;
-    height: 400px;
-    padding: 12px;
-    text-shadow: 2px 2px 1px #000;
+.book {
+  background-image: url("minecraft/textures/book.png");
+  background-position: center;
+  background-size: cover;
+  image-rendering: pixelated;
+  width: 640px;
+  aspect-ratio: 146/180;
+  padding: 64px 64px 64px 64px;
+  font-size: 36px;
 }
 
-.spacer {
-    height: 64px;
+h1 {
+  font-family: "Minecraft Bold";
+  text-align: center;
+  font-size: 1.2em;
+}
+a {
+  text-decoration: underline;
+}
+
+.blurple {
+  color: var(--blurple);
+}
+
+.ico {
+  height: 24px;
+  margin: 0 12px 0 0;
 }
