@@ -25,7 +25,6 @@ body {
   user-select: none;
   gap: 16px;
   filter: drop-shadow(0 0 6px #000);
-  /* overflow-x: scroll; */
   padding: 0 0 6px 0;
 }
 
@@ -38,7 +37,7 @@ body {
   user-select: none;
   position: fixed;
   pointer-events: none;
-  background-color: #110110ee;
+  background-color: #110211ef;
   padding: 6px;
   font-size: 24px;
   top: 50%;
@@ -61,9 +60,9 @@ body {
   );
 }
 .tooltip-info {
-  border: solid 4px #2b0860dd;
+  border: solid 4px #301669e9;
   user-select: none;
-  padding: 6px;
+  padding: 2px 6px;
 }
 .tooltip-title {
   margin: 0 0 6px 0;
