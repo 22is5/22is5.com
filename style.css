@@ -1,47 +1,77 @@
 @import url("https://cdn.22is5.com/css/reset.css");
-@import url("https://cdn.22is5.com/fonts/minecraft.css");
+@import url("https://cdn.22is5.com/fonts/mona-sans/font.css");
 @import url("https://cdn.22is5.com/css/colors.css");
+
+* {
+  user-select: none;
+}
 
 html,
 body {
-  background-color: #000;
+  background-color: #fff;
   color: #000;
-  font-family: "Minecraft Regular";
+  font-family: "Mona Sans";
 }
 
 .wrap {
   width: 100%;
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.book {
-  background-image: url("minecraft/textures/book.png");
-  background-position: center;
-  background-size: cover;
-  image-rendering: pixelated;
+.content {
   width: 640px;
-  aspect-ratio: 146/180;
-  padding: 64px 64px 64px 64px;
-  font-size: 36px;
+}
+
+.logo {
+  width: 24%;
+  line-height: 0;
+  opacity: 0;
 }
 
 h1 {
-  font-family: "Minecraft Bold";
+  font-size: 64px;
   text-align: center;
-  font-size: 1.2em;
-}
-a {
-  text-decoration: underline;
+  font-weight: 600;
 }
 
-.blurple {
-  color: var(--blurple);
+.spacer {
+  height: 36px;
+}
+
+.links {
+  border: solid 4px #000;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 56px;
+}
+
+.link {
+  border: solid 4px #000;
+  padding: 24px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  border-radius: 64px;
+  transition: filter 0.2s;
+  background-color: #fff;
+}
+
+.link:hover {
+  filter: drop-shadow(0 0 6px #00000080);
 }
 
 .ico {
-  height: 24px;
-  margin: 0 12px 0 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  aspect-ratio: 1/1;
+  filter: brightness(0);
 }
