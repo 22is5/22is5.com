@@ -1,77 +1,46 @@
 @import url("https://cdn.22is5.com/css/reset.css");
-@import url("https://cdn.22is5.com/fonts/mona-sans/font.css");
+@import url("https://cdn.22is5.com/fonts/ibm-plex-mono/font.css");
 @import url("https://cdn.22is5.com/css/colors.css");
+@import url("css/colors.css");
 
-* {
-  user-select: none;
-}
-
-html,
 body {
-  background-color: #fff;
-  color: #000;
-  font-family: "Mona Sans";
+  font-family: "IBM Plex Mono";
+  background-color: #1f1f1f;
+  color: #d1cfc0;
+  padding: 8px 4px;
 }
 
-.wrap {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+a {
+  text-decoration: underline;
 }
 
-.content {
-  width: 640px;
+.logo, .header {
+  font-weight: bold;
 }
 
-.logo {
-  width: 24%;
-  line-height: 0;
-  opacity: 0;
+.discord {
+  color: var(--blurple);
 }
 
-h1 {
-  font-size: 64px;
-  text-align: center;
-  font-weight: 600;
+.red {
+  color: var(--red);
+}
+.orange {
+  color:var(--orange);
+}
+.yellow {
+  color: var(--yellow);
+}
+.green {
+  color:var(--green);
+}
+.blue {
+  color:var(--blue);
+}
+.purple {
+  color:var(--purple);
 }
 
-.spacer {
-  height: 36px;
-}
-
-.links {
-  border: solid 4px #000;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  border-radius: 56px;
-}
-
-.link {
-  border: solid 4px #000;
-  padding: 24px;
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-  position: relative;
-  text-align: center;
-  border-radius: 64px;
-  transition: filter 0.2s;
-  background-color: #fff;
-}
-
-.link:hover {
-  filter: drop-shadow(0 0 6px #00000080);
-}
-
-.ico {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 12px;
-  aspect-ratio: 1/1;
-  filter: brightness(0);
+.bold {
+  font-weight: bold;
 }
