@@ -7,14 +7,15 @@ body {
   font-family: "IBM Plex Mono";
   background-color: #1f1f1f;
   color: #d1cfc0;
-  padding: 8px 4px;
+  padding: 16px 12px;
 }
 
 a {
   text-decoration: underline;
 }
 
-.logo, .header {
+.logo,
+.header {
   font-weight: bold;
 }
 
@@ -26,19 +27,19 @@ a {
   color: var(--red);
 }
 .orange {
-  color:var(--orange);
+  color: var(--orange);
 }
 .yellow {
   color: var(--yellow);
 }
 .green {
-  color:var(--green);
+  color: var(--green);
 }
 .blue {
-  color:var(--blue);
+  color: var(--blue);
 }
 .purple {
-  color:var(--purple);
+  color: var(--purple);
 }
 
 .bold {
