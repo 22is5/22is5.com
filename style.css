@@ -4,7 +4,7 @@
 @import url("css/colors.css");
 
 body {
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", monospace;
   background-color: #1f1f1f;
   color: #d1cfc0;
   padding: 16px 12px;
@@ -16,7 +16,7 @@ a {
 
 .logo,
 .header {
-  font-weight: bold;
+  font-family: "IBM Plex Mono Bold";
 }
 
 .discord {
@@ -44,4 +44,14 @@ a {
 
 .bold {
   font-weight: bold;
+}
+
+.copy {
+  cursor:cell;
+}
+
+.name::after {
+  content: ".22is5.com";
+  opacity: 0.2;
+  font-family: "IBM Plex Mono";
 }

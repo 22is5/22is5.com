@@ -20,36 +20,44 @@
 
 -| <span class="header">CLOUD</span> |--------------------------------------------------
 
-<span class="header">NAME                IP                  OS</span>
-steambox            100.100.1.1         Bazzite / Windows 11
-steamdeck           100.100.1.2         SteamOS
-toshiba             100.100.2.1         Linux Mint XFCE 22.2
+click to copy ip.
 
--| <span class="header">SERVICES</span> |-----------------------------------------------
+<span class="header name">steambox</span>
+<span class="copy">100.100.1.1</span>
+Bazzite
 
-<span class="bold">toshiba-copyparty</span>
-<a href="http://toshiba.22is5.com:8000">domain</a> <a href="http://100.64.61.18:8000">ip</a>
+<span class="header name">steamdeck</span>
+<span class="copy">100.100.1.2</span>
+SteamOS
+ports:
+- 2016 (minecraft)
 
-<span class="bold">steamdeck-minecraft</span>
-<a href="http://steamdeck.22is5.com:2016">domain</a> <a href="http://100.76.88.42:2016">ip</a>
+<span class="header name">toshiba</span>
+<span class="copy">100.100.2.1</span>
+Linux Mint XFCE 22.2
+ports:
+- 8000 (copyparty)
 
-the reason you would use domain over ip is so that if the ip
-were to change, the domain would point to the new ip without
-the user needing to configure anything.
+<span class="header name">dell</span>
+<span class="copy">100.100.2.2</span>
+Linux Mint XFCE 22.2
+ports:
+- 2016 (minecraft)
+
 
 -| <span class="header">CREDITS</span> |------------------------------------------------
 
   ###
-  #####     <a href="https://bazzite.gg/">bazzite</a>
+  #####    <a href="https://bazzite.gg/">bazzite</a>
      ###
  <span class="blue">@@@</span>  ###   <a href="https://github.com/9001/copyparty">copyparty</a>
 <span class="blue">@@@@@</span> ###
-<span class="blue">@@@@@</span> ###   <a href="https://tailscale.com/">tailscale</a>
+<span class="blue">@@@@@</span> ###   <a href="https://store.steampowered.com/steamos">steamOS</a>
 <span class="blue">@@@@@</span> ###
- <span class="blue">@@@</span>  ###
+ <span class="blue">@@@</span>  ###   <a href="https://tailscale.com/">tailscale</a>
      ###
   #####
-  ###
-  </pre>
+  ###</pre>
+    <script src="js/copy.js"></script>
   </body>
 </html>
