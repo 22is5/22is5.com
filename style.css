@@ -1,12 +1,26 @@
 @import url("https://cdn.22is5.com/css/reset.css");
-@import url("https://cdn.22is5.com/fonts/ibm-plex-mono/font.css");
-@import url("https://cdn.22is5.com/css/colors.css");
-@import url("css/colors.css");
+@import url("css/main.css");
+
+:root {
+  --red: #d65858;
+  --orange: #ffb764;
+  --yellow: #ffe180;
+  --green: #75ff87;
+  --blue: #83c7ff;
+  --purple: #db8fff;
+  --black: #1f1f1f;
+  --gray: #d1cfc049;
+  --white: #d1cfc0;
+
+  --font-regular: "IBM Plex Mono";
+  --font-bold: "IBM Plex Mono Bold";
+  --font-italic: "IBM Plex Mono Italic";
+}
 
 body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: #1f1f1f;
-  color: #d1cfc0;
+  font-family: var(--font-regular);
+  background-color: var(--black);
+  color: var(--white);
   padding: 16px 12px;
 }
 
@@ -15,43 +29,17 @@ a {
 }
 
 .logo,
-.header {
-  font-family: "IBM Plex Mono Bold";
-}
-
-.discord {
-  color: var(--blurple);
-}
-
-.red {
-  color: var(--red);
-}
-.orange {
-  color: var(--orange);
-}
-.yellow {
-  color: var(--yellow);
-}
-.green {
-  color: var(--green);
-}
-.blue {
-  color: var(--blue);
-}
-.purple {
-  color: var(--purple);
-}
-
+.header,
 .bold {
-  font-weight: bold;
+  font-family: var(--font-bold);
 }
 
 .copy {
-  cursor:cell;
+  cursor: cell;
 }
 
 .name::after {
   content: ".22is5.com";
-  opacity: 0.2;
+  color: var(--gray);
   font-family: "IBM Plex Mono";
 }

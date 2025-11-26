@@ -1,0 +1,34 @@
+@import url("https://cdn.22is5.com/fonts/ibm-plex-mono/font.css");
+
+
+.red {
+  color: var(--red);
+}
+.orange {
+  color: var(--orange);
+}
+.yellow {
+  color: var(--yellow);
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.purple {
+  color: var(--purple);
+}
+.white {
+  color: var(--white);
+}
+.gray {
+  color: var(--gray);
+}
+.black {
+  color: var(--black);
+}
+.logo::after {
+  content: " 222    222             55555\A 2   2  2   2  i         5\A     2      2      ssss  5555\A   22     22   i  s          5\A  2      2     i   sss       5\A 2      2      i      s  5   5\A 22222  22222  i  ssss    555";
+}
+
