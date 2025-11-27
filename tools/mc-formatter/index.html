@@ -5,47 +5,56 @@
     <style>
       @import url("https://cdn.22is5.com/css/reset.css");
       @import url("https://cdn.22is5.com/fonts/minecraft/font.css");
+      @import url("../../style.css");
 
       :root {
         --size: 32px;
       }
 
       body {
-        background-color: #000;
         width: 100%;
         height: 100vh;
         padding: 12px;
         display: flex;
+        font-family: var(--font-regular);
+        font-size: var(--font-size);
       }
 
       .main {
         width: 50%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
       }
 
       textarea {
+        font-family: var(--font-regular);
+        font-size: var(--font-size);
         width: 100%;
         height: 50%;
-        font-size: var(--size);
-        background-color: #000;
-        color: #fff;
         resize: none;
+        border: none;
+        background-color: var(--white);
+        color: var(--black);
+      }
+      textarea:focus {
+        outline: none;
       }
 
-      pre {
+      #output {
         font-family: "Minecraft Seven";
         width: 100%;
         height: 50%;
         white-space: pre-wrap;
-        font-size: var(--size);
-        background-color: #efefef;
+        background-color: var(--white);
+        color: var(--black);
+        padding: 6px;
       }
 
       .key {
         width: 50%;
         padding: 12px;
-        color: #fff;
-        font-size: var(--size);
       }
 
       .black {
@@ -109,6 +118,9 @@
       .strikethrough {
         text-decoration: line-through;
       }
+      .obfuscated {
+        background-color: #f00;
+      }
     </style>
   </head>
   <body>
@@ -116,11 +128,37 @@
       <textarea
         id="input"
         placeholder="Type Minecraft formatted text here (use § codes)..."
-        r
       ></textarea>
-      <pre id="output"></pre>
+      <div id="output"></div>
     </div>
-    <div class="key">§</div>
+    <pre class="key">
+   -=- Color Codes -=-
+§0 Black
+§1 Dark Blue
+§2 Dark Green
+§3 Dark Aqua
+§4 Dark Red
+§5 Dark Purple
+§6 Gold
+§7 Gray
+§8 Dark Gray
+§9 Blue
+§a Green
+§b Aqua
+§c Red
+§d Light Purple
+§e Yellow
+§f White
+
+   -=- Text Codes -=-
+§l Bold
+§m Strikethrough
+§n Underline
+§o Italic
+§k Obfuscated
+
+§r Reset
+    </pre>
     <script>
       const formatCodes = {
         0: "black",
@@ -144,7 +182,7 @@
         m: "strikethrough",
         n: "underline",
         o: "italic",
-        l: "obfuscated",
+        k: "obfuscated",
 
         r: "reset",
       };
