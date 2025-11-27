@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @import url("https://cdn.22is5.com/css/reset.css");
+      @import url("https://cdn.22is5.com/fonts/minecraft/font.css");
+
+      :root {
+        --size: 32px;
+      }
+
+      body {
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        padding: 12px;
+        display: flex;
+      }
+
+      .main {
+        width: 50%;
+        height: 100%;
+      }
+
+      textarea {
+        width: 100%;
+        height: 50%;
+        font-size: var(--size);
+        background-color: #000;
+        color: #fff;
+        resize: none;
+      }
+
+      pre {
+        font-family: "Minecraft Seven";
+        width: 100%;
+        height: 50%;
+        white-space: pre-wrap;
+        font-size: var(--size);
+        background-color: #efefef;
+      }
+
+      .key {
+        width: 50%;
+        padding: 12px;
+        color: #fff;
+        font-size: var(--size);
+      }
+
+      .black {
+        color: #000000;
+      }
+      .dark_blue {
+        color: #0000aa;
+      }
+      .dark_green {
+        color: #00aa00;
+      }
+      .dark_aqua {
+        color: #00aaaa;
+      }
+      .dark_red {
+        color: #aa0000;
+      }
+      .dark_purple {
+        color: #aa00aa;
+      }
+      .gold {
+        color: #ffaa00;
+      }
+      .gray {
+        color: #aaaaaa;
+      }
+      .dark_gray {
+        color: #555555;
+      }
+      .blue {
+        color: #5555ff;
+      }
+      .green {
+        color: #55ff55;
+      }
+      .aqua {
+        color: #55ffff;
+      }
+      .red {
+        color: #ff5555;
+      }
+      .light_purple {
+        color: #ff55ff;
+      }
+      .yellow {
+        color: #ffff55;
+      }
+      .white {
+        color: #ffffff;
+      }
+
+      .bold {
+        font-family: "Minecraft Bold";
+      }
+      .italic {
+        font-family: "Minecraft Italic";
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .strikethrough {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <textarea
+        id="input"
+        placeholder="Type Minecraft formatted text here (use § codes)..."
+        r
+      ></textarea>
+      <pre id="output"></pre>
+    </div>
+    <div class="key">§</div>
+    <script>
+      const formatCodes = {
+        0: "black",
+        1: "dark_blue",
+        2: "dark_green",
+        3: "dark_aqua",
+        4: "dark_red",
+        5: "dark_purple",
+        6: "gold",
+        7: "gray",
+        8: "dark_gray",
+        9: "blue",
+        a: "green",
+        b: "aqua",
+        c: "red",
+        d: "light_purple",
+        e: "yellow",
+        f: "white",
+
+        l: "bold",
+        m: "strikethrough",
+        n: "underline",
+        o: "italic",
+        l: "obfuscated",
+
+        r: "reset",
+      };
+
+      function renderMinecraftText(input) {
+        let html = "";
+        let activeClasses = [];
+
+        const pushSpan = (text) => {
+          if (!text) return;
+
+          if (activeClasses.length === 0) {
+            html += text;
+          } else {
+            html += `<span class="${activeClasses.join(" ")}">${text}</span>`;
+          }
+        };
+
+        for (let i = 0; i < input.length; i++) {
+          if (input[i] === "§" && i + 1 < input.length) {
+            const code = input[i + 1].toLowerCase();
+            i++;
+
+            if (formatCodes[code]) {
+              if (code === "r") {
+                activeClasses = [];
+              } else if ("0123456789abcdef".includes(code)) {
+                activeClasses = [formatCodes[code]];
+              } else {
+                activeClasses.push(formatCodes[code]);
+              }
+
+              continue;
+            }
+          }
+
+          pushSpan(input[i]);
+        }
+
+        return html;
+      }
+
+      document.getElementById("input").addEventListener("input", () => {
+        const input = document.getElementById("input").value;
+        document.getElementById("output").innerHTML =
+          renderMinecraftText(input);
+      });
+    </script>
+  </body>
+</html>
