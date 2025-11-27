@@ -21,7 +21,11 @@ body {
   font-family: var(--font-regular);
   background-color: var(--black);
   color: var(--white);
+}
+
+.content {
   padding: 16px 12px;
+  width: fit-content;
 }
 
 a {
