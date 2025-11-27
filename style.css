@@ -16,14 +16,14 @@
   --font-bold: "IBM Plex Mono Bold";
   --font-italic: "IBM Plex Mono Italic";
 
-  --font-size: 24px;
+  --font-size: 18px;
 }
 
 body {
   font-family: var(--font-regular);
   background-color: var(--black);
   color: var(--white);
-  font-size: 24px;
+  font-size: var(--font-size);
 }
 
 .content {
