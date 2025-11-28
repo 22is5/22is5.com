@@ -1,0 +1,90 @@
+@import url("/css/global.css");
+
+:root {
+  --darkbg: #00000080;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: var(--font-size);
+}
+
+.banner {
+  background-color: var(--darkbg);
+  padding: 24px;
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.banner__logo {
+  font-family: var(--font-bold);
+  font-size: 3rem;
+}
+
+.banner__links {
+  width: 30%;
+}
+
+.spacer {
+  height: 128px;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  min-width: 50%;
+  width: 600px;
+  max-width: 100%;
+  background-color: var(--darkbg);
+  padding: 24px;
+  line-height: 1.6;
+  font-family: "Source Serif";
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: justify;
+}
+
+.content {
+  clip-path: polygon(
+    0px calc(100% - 6px),
+    6px calc(100% - 6px),
+    6px 100%,
+    calc(100% - 6px) 100%,
+    calc(100% - 6px) calc(100% - 6px),
+    100% calc(100% - 6px),
+    100% 6px,
+    calc(100% - 6px) 6px,
+    calc(100% - 6px) 0px,
+    6px 0px,
+    6px 6px,
+    0px 6px
+  );
+}
+
+.imgh {
+  display: flex;
+  gap: 24px;
+}
+.imgh img {
+  max-width: 50%;
+  max-height: 512px;
+  border: solid 1px var(--white);
+}
+.imgh p {
+  border: solid 1px var(--white);
+  padding: 18px 24px;
+  background-color: var(--black);
+  width: 100%;
+}

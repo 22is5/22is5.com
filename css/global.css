@@ -1,5 +1,6 @@
+@import url("https://cdn.22is5.com/css/reset.css");
 @import url("https://cdn.22is5.com/fonts/ibm-plex-mono/font.css");
-
+@import url("https://cdn.22is5.com/fonts/source-serif/font.css");
 
 .red {
   color: var(--red);
@@ -32,3 +33,20 @@
   content: " 222    222             55555\A 2   2  2   2  i         5\A     2      2      ssss  5555\A   22     22   i  s          5\A  2      2     i   sss       5\A 2      2      i      s  5   5\A 22222  22222  i  ssss    555";
 }
 
+:root {
+  --red: #d65858;
+  --orange: #ffb764;
+  --yellow: #ffe180;
+  --green: #75ff87;
+  --blue: #83c7ff;
+  --purple: #db8fff;
+  --black: #1f1f1f;
+  --gray: #d1cfc049;
+  --white: #d1cfc0;
+
+  --font-regular: "IBM Plex Mono";
+  --font-bold: "IBM Plex Mono Bold";
+  --font-italic: "IBM Plex Mono Italic";
+
+  --font-size: 18px;
+}

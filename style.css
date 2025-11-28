@@ -1,23 +1,4 @@
-@import url("https://cdn.22is5.com/css/reset.css");
-@import url("css/main.css");
-
-:root {
-  --red: #d65858;
-  --orange: #ffb764;
-  --yellow: #ffe180;
-  --green: #75ff87;
-  --blue: #83c7ff;
-  --purple: #db8fff;
-  --black: #1f1f1f;
-  --gray: #d1cfc049;
-  --white: #d1cfc0;
-
-  --font-regular: "IBM Plex Mono";
-  --font-bold: "IBM Plex Mono Bold";
-  --font-italic: "IBM Plex Mono Italic";
-
-  --font-size: 18px;
-}
+@import url("css/global.css");
 
 body {
   font-family: var(--font-regular);
